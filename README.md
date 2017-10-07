@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Getting started:
 
-Things you may want to cover:
+```bash
+git clone git@github.com:noctiflow/template.git projectname
+cd projectname
+git remote rm origin
+git init
+bundle install
+rails db:create db:migrate
+rails s
 
-* Ruby version
+```
 
-* System dependencies
+### Deployment:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+heroku create
+git push heroku master
+```
