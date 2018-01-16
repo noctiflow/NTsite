@@ -1,1 +1,32 @@
 //keep all global styling in this file
+*{
+  //border:lime solid thin;
+  color: #222;
+}
+body{
+  background-color: #222;
+}
+.titlebox {
+  text-align: center;
+  font-size: 22px;
+  background-color: #ccc;
+  height: 75px;
+  padding: 15px;
+  margin: 25px;
+  box-shadow: 2px 2px 2px #111;
+  font-size: 35px;
+}
+.imagestack{
+  position: relative;
+  width:100%;
+}
+.blurb{
+  position: absolute;
+  z-index:1;
+}
+.stacked{
+  position: absolute;
+}
+.splashcontainer{
+  position: relative;
+}

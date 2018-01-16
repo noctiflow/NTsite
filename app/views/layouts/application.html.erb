@@ -7,10 +7,38 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= favicon_link_tag '', type: 'image/png' %>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <style>*{font-family: 'Varela Round', sans-serif;}</style>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
+  <nav>
+    <div class="titlebox">
+      
+      <div style="position: absolute;">
+        logo
+      </div>
+
+      <div style="margin-top:-10px;">
+      <div>NOCTIFLOW</div>
+      <div style="font-size: 20px;margin-top:-12px">WEB DEVELOPMENT</div>
+      </div>
+
+      <div style="position: absolute;right:40px;top:40px">
+        social
+      </div>  
+      
+      <!--<a href="#">home</a> |-->
+      <!--<a href="#">about</a> |-->
+      <!--<a href="#">services</a> |-->
+      <!--<a href="#">portfolio</a> |-->
+      <!--<a href="#">pricing</a> |-->
+      <!--<a href="#">team</a> |-->
+      <!--<a href="#">contact</a>-->
+    </div>
+  </nav>
     <%= yield %>
   </body>
 </html>
