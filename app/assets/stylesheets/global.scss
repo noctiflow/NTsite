@@ -16,6 +16,10 @@ body{
   box-shadow: 2px 2px 2px #111;
   font-size: 35px;
 }
+.test{
+  //margin:25px;
+  //width:100%;
+}
 .imagestack{
   position: relative;
   width:100%;
@@ -29,4 +33,26 @@ body{
 }
 .splashcontainer{
   position: relative;
+}
+.cutCorner {
+  position:relative; background-color:#222;
+  border:1px solid silver; display: inline-block;
+  width:100%;
+  height:100px;
+}
+
+.cutCorner img {
+  display:block;
+}
+
+.cutCorner:before {
+  position:absolute; left:-1px; top:-1px; content:'';
+  border-top: 70px solid silver;
+  border-right: 70px solid transparent;
+}
+
+.cutCorner:after {
+  position:absolute; left:-2px; top:-2px; content:'';
+  border-top: 70px solid white;
+  border-right: 70px solid transparent;
 }
