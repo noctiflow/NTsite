@@ -14,31 +14,55 @@
   </head>
 
   <body>
-  <nav>
-    <div class="titlebox">
-      
-      <div style="position: absolute;">
-        logo
-      </div>
-
-      <div style="margin-top:-10px;">
-      <div>NOCTIFLOW</div>
-      <div style="font-size: 20px;margin-top:-12px">WEB DEVELOPMENT</div>
-      </div>
-
-      <div style="position: absolute;right:40px;top:40px">
-        social
-      </div>  
-      
-      <!--<a href="#">home</a> |-->
-      <!--<a href="#">about</a> |-->
-      <!--<a href="#">services</a> |-->
-      <!--<a href="#">portfolio</a> |-->
-      <!--<a href="#">pricing</a> |-->
-      <!--<a href="#">team</a> |-->
-      <!--<a href="#">contact</a>-->
+    <div class="navbar-fixed">
+      <nav class="transparent z-depth-0">
+        <div class="nav-wrapper">
+          <div class="row">
+            <div class="col s12">
+              <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+              <a href="https://codepen.io/collection/nbBqgY/" class="brand-logo" target="_blank">Noctiflow Technologies</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">About Us</a></li>
+                <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Portfolio</a></li>
+                <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Team</a></li>
+                <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Pricing</a></li>
+                <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">About Us</a></li>
+            <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Portfolio</a></li>
+            <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Team</a></li>
+            <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Pricing</a></li>
+            <li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </nav>
-    <%= yield %>
+
+
+    <div class="fixed-action-btn horizontal click-to-toggle">
+       <a style="opacity: 0.5;" class="menubtn btn-floating btn-large black waves-effect waves-light">
+         <i class="material-icons">menu</i>
+       </a>
+       <ul>
+         <li><a title="Home" href="/" class="btn-floating black"><i class="material-icons">home</i></a></li>
+         <li><a title="Font" href="/font" class="btn-floating blue"><i class="material-icons">font_download</i></a></li>
+         <li><a title="Image" href="/image" class="btn-floating yellow darken-1"><i class="material-icons">photo</i></a></li>
+         <li><a title="Icon" href="/icon" class="btn-floating green"><i class="material-icons">insert_emoticon</i></a></li>
+         <li><a title="Button" href="/button" class="btn-floating red"><i class="material-icons">whatshot</i></a></li>
+       </ul>
+     </div>
+
+     <div id='stars'></div>
+     <!-- <div id='stars2'></div> -->
+     <div id='stars3'></div>
+
+     <div class="contentcss">
+
+        <%= yield %>
+     </div>
+
   </body>
 </html>
