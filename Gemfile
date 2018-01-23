@@ -40,6 +40,7 @@ gem 'rename'
 
 # misc
 gem 'bootstrap-sass'
+gem 'materialize-sass'
 gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'bootstrap-glyphicons'
