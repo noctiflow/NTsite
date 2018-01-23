@@ -58,35 +58,11 @@
 
 // ============================================================================
 
-html, body{
-background: linear-gradient(180deg, #000000, #082367, #ED8B0C);
-background-size: 200% 200%;
-height: 100%;
-margin: 0;
-overflow: hidden;
-will-change: transform, opacity;
 
--webkit-animation: bggradient 120s ease infinite;
--moz-animation: bggradient 120s ease infinite;
-animation: bggradient 120s ease infinite;
+html, body {
+background: black;
+}
 
-
-@-webkit-keyframes bggradient {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
-}
-@-moz-keyframes bggradient {
-  0%{background-position:51% 0%}
-  50%{background-position:50% 100%}
-  100%{background-position:51% 0%}
-}
-@keyframes bggradient {
-  0%{background-position:51% 0%}
-  50%{background-position:50% 100%}
-  100%{background-position:51% 0%}
-}
-}
 
 .navbar-fixed {position: absolute;z-index:999999999;}
 
