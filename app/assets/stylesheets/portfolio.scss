@@ -1,0 +1,42 @@
+
+.carousel-item {
+  opacity: 0.8 !important;
+  min-width: 40vw !important;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.modal .modal-content {
+  padding: 0px;
+}
+
+
+.modal {
+  //  box-shadow: 5px 10px grey;
+  //  border-radius: 35px;
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.modal-footer{
+  // background-color: rgba(0,0,0,0) !important;
+}
+
+.btn, .btn-large {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.mhover:hover {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(-20px); }
+}
