@@ -22,8 +22,20 @@
   // background-color: rgba(0,0,0,0) !important;
 }
 
-.btn, .btn-large {
+.invsbtn{
   background-color: rgba(0,0,0,0) !important;
+}
+
+.invsbtn:hover{
+  color: palegoldenrod;
+}
+
+.xbtn {
+  color: white;
+}
+
+.xbtn:hover {
+  color: palegoldenrod;
 }
 
 .mhover:hover {
