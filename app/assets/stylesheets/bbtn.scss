@@ -1,5 +1,5 @@
 $fuschia: #ff0081;
-$button-bg: white;
+$button-bg: palegoldenrod;
 $button-text-color: black;
 $baby-blue: palegoldenrod;
 
@@ -12,16 +12,16 @@ $baby-blue: palegoldenrod;
   // margin-bottom: 60px;
   // -webkit-appearance: none;
   // appearance: none;
-  background-color: $button-bg;
+  // background-color: rgba(0,0,0,0);
   color: $button-text-color;
   border-radius: 35px;
   border: none;
-  cursor: progress;
+  cursor: pointer;
   // position: relative;
   transition: transform ease-in 1.0s, box-shadow ease-in 0.25s;
 
   &:hover{
-    background-color: palegoldenrod;
+    background-color: rgba(0,0,0,0);
   }
 
   &:focus {
