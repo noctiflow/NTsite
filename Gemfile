@@ -47,6 +47,7 @@ gem 'bootstrap-glyphicons'
 gem 'mail_form'
 gem 'rails-i18n'
 gem 'meta-tags' #SEO
+gem 'animate-rails'
 
 #optional gems
 #gem 'kaminari' # easy pagination
