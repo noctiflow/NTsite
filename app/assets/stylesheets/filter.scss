@@ -1,0 +1,59 @@
+
+img {
+	max-width: 100%;
+}
+
+.filtermenu {
+	width:80%;
+	margin: 20px auto;
+	text-align: center;
+
+	 li {
+
+		padding: 4px 15px;
+		display: inline-block;
+		border-radius: 999px;
+		cursor: pointer;
+    background:palegoldenrod;
+    color: black;
+
+
+		 &:focus {
+
+		 }
+	}
+}
+
+.filterbtn {
+  background:black !important;
+  color: palegoldenrod !important;
+}
+
+
+.container {
+	width:100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.post {
+	width: 100%;
+	margin: 10px;
+
+
+	&-title {
+    width: 100%;
+		// font-size: 18px;
+		// font-weight: bold;
+		//  margin-bottom:10px;
+	}
+
+	&-thumb {
+		margin-bottom:10px;
+	}
+
+	&-txt {
+		// font-size: 12px;
+	}
+}
