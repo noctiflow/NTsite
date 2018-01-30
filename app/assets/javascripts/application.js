@@ -17,3 +17,4 @@
 //= require global
 //= require bbtn
 //= require portfolio
+//= require filter
