@@ -200,3 +200,67 @@ body{
   -webkit-animation-duration: 4s;
   -webkit-animation-delay: 2s;
 }
+
+
+// =========== NAVBAR CSS =====================================================
+
+
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    background-color: rgba(0,0,0,0.6) !important;
+
+}
+
+.nav > li > a {
+
+}
+
+.navbar.scrolled {
+    background: rgb(0, 0, 0); /* IE */
+    background: rgba(0, 0, 0, 0.6); /* NON-IE */
+}
+
+.nav > li > a:hover {
+  background-color: rgba(0,0,0, 0);
+  // color: rgba(238,232,170, 0.8);
+  color: white;
+  text-shadow: 4px 4px 8px palegoldenrod;
+}
+
+a {
+  // color: white;
+  text-shadow: 2px 2px 4px #000000;
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+
+  text-shadow: 2px 2px 4px #111;
+  }
+}
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: 340px;
+  overflow-x: visible;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse
+    {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      text-shadow: 1px 1px 3px #111;
+    }
+}
+
+li.active a {
+  background-color: rgba(0,0,0,0);
+  // color: rgba(238,232,170, 0.8);
+  color: white;
+  text-shadow: 4px 4px 8px palegoldenrod;
+}

@@ -1,4 +1,4 @@
-$fuschia: #ff0081;
+$fuschia: white;
 $button-bg: palegoldenrod;
 $button-text-color: black;
 $baby-blue: palegoldenrod;
@@ -76,7 +76,7 @@ $baby-blue: palegoldenrod;
   &:active {
     transform: scale(0.9);
     background-color: darken($button-bg, 5%);
-    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+    box-shadow: 0 2px 25px rgba(255, 255, 255, 0.2);
   }
 
   &.animate {
