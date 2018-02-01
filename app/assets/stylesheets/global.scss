@@ -178,9 +178,7 @@ body{
 .menubtn:hover {
   opacity: 1 !important;
 }
-.ctnbox {
 
-}
 
 .side-nav{
   background-color: rgba(0,0,0, 0.8) !important;
@@ -215,25 +213,34 @@ body{
 
 }
 
-.nav > li > a {
+.navbar-header button:focus {
+  background-color: rgba(238,232,170, 0.8) !important;
+}
 
+.navbar-nav > li  {
+ @include mobile{
+   width: 100%;
+ }
 }
 
 .navbar.scrolled {
-    background: rgb(0, 0, 0); /* IE */
-    background: rgba(0, 0, 0, 0.6); /* NON-IE */
+    background: rgba(0, 0, 0, 0); /* IE */
+    background: rgba(0, 0, 0, 0); /* NON-IE */
 }
 
 .nav > li > a:hover {
-  background-color: rgba(0,0,0, 0);
+  background-color: rgba(0,0,0,0) !important;
   // color: rgba(238,232,170, 0.8);
+  border: none;
   color: white;
   text-shadow: 4px 4px 8px palegoldenrod;
+  text-transform: uppercase;
 }
 
 a {
   // color: white;
   text-shadow: 2px 2px 4px #000000;
+
 
 @media (max-width: 767px) {
   .navbar-collapse {
@@ -247,6 +254,7 @@ a {
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
   overflow-x: visible;
+
 }
 
 @media (max-width: 767px) {
@@ -260,7 +268,7 @@ a {
 
 li.active a {
   background-color: rgba(0,0,0,0);
-  // color: rgba(238,232,170, 0.8);
   color: white;
   text-shadow: 4px 4px 8px palegoldenrod;
+  text-transform: uppercase;
 }
