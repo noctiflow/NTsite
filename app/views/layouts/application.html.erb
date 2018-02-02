@@ -7,6 +7,7 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= favicon_link_tag '', type: 'image/png' %>
+
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <style>*{font-family: 'Varela Round', sans-serif;}</style>
 
@@ -19,6 +20,10 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          <img class="img-responsive" src="<%= asset_path( 'portfolio/noctiflow_text_512-g.png' ) %>" width="200vw">
+        </a>
+
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only" style="background:black">Toggle navigation</span>
           <span style="background-color: white" class="icon-bar"></span>
@@ -30,58 +35,21 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav pull-right">
-          <li class="faa-pulse animated-hover faa-fast"><a href="#about_us">About Us</a></li>
-          <li class="faa-pulse animated-hover faa-fast"><a href="#services">Services</a></li>
-          <li class="faa-pulse animated-hover faa-fast"><a href="#portfolio">Portfolio</a></li>
-          <li class="faa-pulse animated-hover faa-fast"><a href="#team">Team</a></li>
-          <li class="faa-pulse animated-hover faa-fast"><a href="#pricing">Pricing</a></li>
-          <li class="faa-pulse animated-hover faa-fast"><a href="#contact_us">Contact Us</a></li>
+
+            <li class="faa-pulse animated-hover faa-fast"><a href="#about_us">About Us</a></li>
+            <li class="faa-pulse animated-hover faa-fast"><a href="#services">Services</a></li>
+            <li class="faa-pulse animated-hover faa-fast"><a href="#portfolio">Portfolio</a></li>
+            <li class="faa-pulse animated-hover faa-fast"><a href="#team">Team</a></li>
+            <li class="faa-pulse animated-hover faa-fast"><a href="#pricing">Pricing</a></li>
+            <li class="faa-pulse animated-hover faa-fast"><a href="#contact_us">Contact Us</a></li>
+
         </ul>
 
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
-    <!-- <div class="navbar-fixed">
-      <nav class="transparent z-depth-0">
-        <div class="nav-wrapper">
-          <div class="row">
-            <div class="col s12">
-              <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-              <a href="/" class="brand-logo">Noctiflow Technologies</a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="#about_us">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact_us">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="#about_us">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact_us">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div> -->
 
-
-    <div class="fixed-action-btn horizontal click-to-toggle">
-       <a style="opacity: 0.5;" class="menubtn btn-floating btn-large black waves-effect waves-light">
-         <i class="material-icons">menu</i>
-       </a>
-       <ul>
-         <li><a title="Home" href="/" class="btn-floating white"><i style="color: black;" class="material-icons  faa-burst animated-hover">home</i></a></li>
-         <li><a title="Portfolio" href="/portfolio" class="btn-floating blue"><i class="material-icons  faa-burst animated-hover">photo</i></a></li>
-         <li><a title="Contact Us" href="#contact_us" class="btn-floating red"><i class="material-icons  faa-burst animated-hover">mail</i></a></li>
-       </ul>
-     </div>
 
      <div id='stars'></div>
 
@@ -90,9 +58,9 @@
 
         <%= yield %>
 
+
      </div>
 
-     <!-- <div id='stars3'></div> -->
 
   </body>
 </html>

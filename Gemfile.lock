@@ -90,8 +90,6 @@ GEM
     mail_form (1.7.0)
       actionmailer (>= 3.2, < 5.2)
       activemodel (>= 3.2, < 5.2)
-    materialize-sass (0.100.2)
-      sass (~> 3.3)
     meta-tags (2.6.0)
       actionpack (>= 3.2.0, < 5.3)
     method_source (0.8.2)
@@ -205,7 +203,6 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   mail_form
-  materialize-sass
   meta-tags
   pg (~> 0.18)
   puma (~> 3.0)

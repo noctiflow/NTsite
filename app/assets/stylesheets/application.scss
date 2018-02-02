@@ -14,7 +14,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "bootstrap/glyphicons";
-@import "materialize";
+// @import "materialize";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import "font-awesome";
 @import "mediaquery-mixins";
@@ -24,4 +24,5 @@
 @import "animation";
 @import "bbtn";
 @import "animate";
-@import "filter"
+@import "filter";
+@import "home";
