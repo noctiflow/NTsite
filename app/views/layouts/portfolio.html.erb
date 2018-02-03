@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Template</title>
+    <title>Portfolio</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -24,6 +24,9 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          <img class="img-responsive" src="<%= asset_path( 'portfolio/noctiflow_text_512-g.png' ) %>" width="200vw">
+        </a>
 
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only" style="background:black">Toggle navigation</span>
@@ -35,14 +38,11 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav pull-right">
 
             <li class="faa-pulse animated-hover faa-fast"><a href="/#about_us">About Us</a></li>
             <li class="faa-pulse animated-hover faa-fast"><a href="/#services">Services</a></li>
             <li class="faa-pulse animated-hover faa-fast"><a href="/#portfolio">Portfolio</a></li>
-            <a class="navbar-brand" href="/">
-              <img class="img-responsive" src="<%= asset_path( 'portfolio/noctiflow_text_512-g.png' ) %>" width="200vw">
-            </a>
             <li class="faa-pulse animated-hover faa-fast"><a href="/#team">Team</a></li>
             <li class="faa-pulse animated-hover faa-fast"><a href="/#pricing">Pricing</a></li>
             <li class="faa-pulse animated-hover faa-fast"><a href="/#contact_us">Contact Us</a></li>
@@ -55,108 +55,9 @@
 
      <div id='stars'></div>
 
-
      <div class="jumbotron-fluid">
 
-
-       <div style="padding-top: 2%;" class="container-fluid">
-
-         <div class="col-lg-12">
-           <div class="carousel">
-              <a class="carousel-item responsive-img modal-trigger" href="#modal1"><img class="mhover" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>"></a>
-              <a class="carousel-item responsive-img modal-trigger" href="#modal2"><img class="mhover" src="<%= asset_path( 'portfolio/demo1.jpg' ) %>"></a>
-              <a class="carousel-item responsive-img modal-trigger" href="#modal3"><img class="mhover" src="<%= asset_path( 'portfolio/demo2.jpg' ) %>"></a>
-              <a class="carousel-item responsive-img modal-trigger" href="#modal4"><img class="mhover" src="<%= asset_path( 'portfolio/demo3.jpg' ) %>"></a>
-              <a class="carousel-item responsive-img modal-trigger" href="#modal5"><img class="mhover" src="<%= asset_path( 'portfolio/aaplus_full.jpg' ) %>"></a>
-              <a class="carousel-item responsive-img modal-trigger" href="#modal6"><img class="mhover" src="<%= asset_path( 'portfolio/aroma_full.jpg' ) %>"></a>
-           </div>
-         </div>
-       </div>
-
-       <div style="padding-top: 30vh;" class="container">
-         <div class="col-lg-12">
-           <div class="col-md-1">
-           </div>
-           <center>
-             <div class="col-md-12">
-               <img style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/aromacoffee_logo.png' ) %>">
-               <img style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/sachielwater_logo.png' ) %>">
-               <img style="max-width: 200px;" src="<%= asset_path( 'portfolio/logos/aaplus_logo.png' ) %>">
-             </div>
-           </center>
-           <div class="col-md-1">
-           </div>
-         </div>
-       </div>
-
-       <!--  ============================ Modal Structure ================================================  -->
-          <div id="modal1" class="modal">
-           <div class="modal-content">
-             <h4 style="color: white;">Sachiel Water Inc.
-             <a class="xbtn pull-right waves-effect waves-light modal-action modal-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
-             </h4>
-             <img class="responsive-img" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>">
-           </div>
-           <center>
-           <a class="invsbtn waves-effect waves-light btn" href="http://sachielwaterinc.com/">Click Here To Visit Site</a>
-           </center>
-         </div>
-
-          <div id="modal2" class="modal">
-           <div class="modal-content">
-             <h4 style="color: white;">Noctiflow Company
-             <a class="xbtn pull-right waves-effect waves-light modal-action modal-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></h4>
-             <img class="responsive-img" src="<%= asset_path( 'portfolio/demo1.jpg' ) %>">
-           </div>
-           <center>
-             <a class="invsbtn waves-effect waves-light btn" href="http://demo1.noctiflow.com/">Click Here To Visit Site</a>
-           </center>
-         </div>
-
-          <div id="modal3" class="modal">
-           <div class="modal-content">
-             <h4 style="color: white;">Noctiflow Restaurant
-             <a class="xbtn pull-right waves-effect waves-light modal-action modal-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></h4>
-             <img class="responsive-img" src="<%= asset_path( 'portfolio/demo2.jpg' ) %>">
-           </div>
-           <center>
-             <a class="invsbtn waves-effect waves-light btn" href="http://demo2.noctiflow.com/">Click Here To Visit Site</a>
-           </center>
-         </div>
-
-          <div id="modal4" class="modal">
-           <div class="modal-content">
-             <h4 style="color: white;">Noctiflow Bike Shop
-             <a class="xbtn pull-right waves-effect waves-light modal-action modal-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></h4>
-             <img class="responsive-img" src="<%= asset_path( 'portfolio/demo3' ) %>">
-           </div>
-           <center>
-             <a class="invsbtn waves-effect waves-light btn" href="http://demo3.noctiflow.com/">Click Here To Visit Site</a>
-           </center>
-         </div>
-
-         <div id="modal5" class="modal">
-          <div class="modal-content">
-            <h4 style="color: white;">AA Plus Restaurant
-            <a class="xbtn pull-right waves-effect waves-light modal-action modal-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></h4>
-            <img class="responsive-img" src="<%= asset_path( 'portfolio/aaplus_full.jpg' ) %>">
-          </div>
-          <center>
-            <a class="invsbtn waves-effect waves-light btn" href="http://www.aaplusrestaurant.com/">Click Here To Visit Site</a>
-          </center>
-        </div>
-
-         <div id="modal6" class="modal">
-          <div class="modal-content">
-            <h4 style="color: white;">Aroma Coffee Vancouver
-            <a class="xbtn pull-right waves-effect waves-light modal-action modal-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></h4>
-            <img class="responsive-img" src="<%= asset_path( 'portfolio/aroma_full.jpg' ) %>">
-          </div>
-          <center>
-            <a class="invsbtn waves-effect waves-light btn" href="http://aromacoffee.noctiflow.com/">Click Here To Visit Site</a>
-          </center>
-        </div>
-
+         <%= yield %>
 
 
      </div>
