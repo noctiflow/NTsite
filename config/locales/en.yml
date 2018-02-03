@@ -23,9 +23,9 @@ en:
   about: "About"
   portfolio: "Portfolio"
   pricing: "Pricing"
-  marketing: "Services"
+  services: "Services"
   team: "Team"
-  contact: "Contact"
+  contact_us: "Contact"
 
 
   header_1: "Mission"
