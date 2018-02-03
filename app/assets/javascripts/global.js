@@ -34,9 +34,16 @@ $(document).ready(function() {
 
       // load logo in navbar once scrolling past splash ========================
       if($('.navbar-nav > li').hasClass('active')){
-        if(!triggered) {
-          $('.navbar-header > a > img').addClass('animated fadeIn');
+        if(!triggered){
+          $('.navbar-header > a > img').removeClass('fadeOut');
+          $('.navbar-header > a > img').addClass('fadeIn');
           triggered=true;
+        }
+      }else{
+        if(triggered){
+          $('.navbar-header > a > img').removeClass('fadeIn');
+          $('.navbar-header > a > img').addClass('fadeOut');
+          triggered=false;
         }
       }
 
