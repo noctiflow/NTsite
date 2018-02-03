@@ -88,51 +88,12 @@ en:
   text_31: "Let us know what you're looking for and we'll offer you a FREE quote! Fill us in with your ideas and we'll let you know what we can do for you. Even if it's the simplest concept we can definitely work it out step by step."
   text_32: "EMAIL"
   text_33: "Backup"
-  text_34:
-    one: "%{count} GB"
-    other: "%{count} GB"
-  text_35: "Speed"
-  text_36:
-    one: "%{count} X"
-    other: "%{count} X"
-  text_37: "Normal"
-  text_38: "Name"
-  text_39: "Message"
-  text_40: "NIC TAMURA"
-  text_41: "DESIGNER & DEVELOPER"
-  text_42: "Hi, I'm Nic!"
-  text_43: "Let us know what you're looking for and we'll offer you a FREE Quote"
-  text_44: "SSL Certificate"
-  text_45:
-    one: "%{count} MB"
-    other: "%{count} MB"
-  text_46: "Not compatiable with WordPress Site"
-  text_47: "Not Included"
-  text_48: "Click Here To Contact Us"
+
 
   send_btn: "Send Message"
   close_btn: "Close Project"
 
 
-  blurb_1: "We have you covered every step of the way, from drafting and wireframing to deployment and maintenance. Anything from simple, single page designs to fully-fledged web applications."
-  blurb_2: "Thorough testing ensures your website is up-to-date and easily viewable on all the latest platforms and browsers, allowing your audience to get the full experience whether mobile or on a desktop."
-  blurb_3: "Allowing users to have straight-forward, enjoyable experiences on the web is fundamental in our design. We custom tailor our websites from top to bottom to leave lasting impressions."
-  blurb_4: "On top of our regular services, we also provide options for Wordpress sites, analytics, SEO(Search Engine Optimization), and more. Get in touch with us to find out what we can do for you."
-  blurb_5: "Haven't figured out the perfect logo for your business yet? Don't worry, our design team will assist you in creating a professional, eye-catching logo."
-  blurb_6: "If you do not have photos for your business, we'll take care of it! Our designers will handle any photo editing to ensure they look stunning."
-  blurb_7: "Got your logo? then you are definitely ready for a custom business card that will make your business stand out!"
-  blurb_8: "Just like dresses and suits, we will have your designs custom tailored to fit perfectly for you."
-  blurb_9: "NOTHING SPEAKS LOUDER THAN QUALITY DESIGN WITH GENUINE SERVICES."
-  blurb_10: "We know how important it is to have the right Logo and Designs to achieve the best marketing outcome for your business"
-  blurb_11: "that is why Noctiflow will make that happen for you."
-  blurb_12: "Please contact us for further information regarding the services mentioned above."
-  blurb_13: "Noctiflow will be glad to offer you with a free quote to assist you further."
-  blurb_14: "Please contact us for more information regarding this option."
-  blurb_15: "Looking for the perfect domain name that suits your business? Please contact us and we will be happy to assist you."
-  blurb_16: "Have an idea for a larger scale application? Something with dynamic content for an audience of millions? Whether it's a single page app, a blog, e-commerce, or anything else you have in mind, we'll be happy to put it together for you."
-  blurb_17: "(Search Engine Optimization) Marketing and visibility is crucial to any business. We can optimize your website to maximize on this across many search engines, bringing your project the attention it needs."
-  blurb_18: "Long load times scaring away customers? Not with Noctiflow. Every project we take on gets thoroughly inspected to ensure a lightweight, streamlined experience."
-  blurb_19: "Want to reach a broader multicultural audience? We'll happily provide layouts for your website in multiple languages, depending on what you need."
 
   errors:
     messages:
