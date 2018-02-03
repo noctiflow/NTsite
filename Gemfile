@@ -45,7 +45,7 @@ gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'bootstrap-glyphicons'
 gem 'mail_form'
-gem 'rails-i18n'
+gem 'rails-i18n', '~> 5.0.0'
 gem 'meta-tags' #SEO
 gem 'animate-rails'
 

@@ -207,7 +207,7 @@ DEPENDENCIES
   pg (~> 0.18)
   puma (~> 3.0)
   rails (~> 5.0.4)
-  rails-i18n
+  rails-i18n (~> 5.0.0)
   rename
   sass-rails (~> 5.0)
   simple_form
