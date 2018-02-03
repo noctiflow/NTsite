@@ -1,0 +1,100 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh_TW:
+  about: "關於"
+  portfolio: "作品集"
+  pricing: "價目表"
+  marketing: "服務項目"
+  team: "團隊介紹"
+  contact: "聯絡方式"
+
+
+header_1: "指標"
+header_2: "概念"
+header_3: "歷史"
+header_4: "問題"
+header_5: "歷史"
+header_6: "從概念到成品"
+header_7: "MISSION"
+header_8: "QUESTION"
+header_9: "ABOUT US"
+header_10: "WEB DESIGN"
+header_11: "GRAPHIC"
+header_12: "MARKETING"
+header_13: "SERVICES"
+header_14: "JEFFREY MACDONALD"
+header_15: "Co-Founder & Developer"
+header_16: "RICHARD WANG"
+header_17: "NIC TAMURA"
+header_18: "Designer & Developer"
+header_19: "TEAM"
+header_20: "FREE QUOTES"
+header_21: "Contact Us Now"
+header_22: "PRICING"
+header_23: "PORTFOLIO"
+header_24: "Click Here For More"
+
+
+
+text_1: "Noctiflow Technologies is a Vancouver based web design company that was founded in 2017."
+text_2: "We have you covered every step of the way, from drafting and wireframing to deployment and maintenance. Anything from simple, single page designs to fully-fledged web applications."
+text_3: "Allowing users to have straight-forward, enjoyable experiences on the web is fundamental in our design. We custom tailor our websites from top to bottom to leave lasting impressions."
+text_4: "NOTHING SPEAKS LOUDER THAN QUALITY DESIGN WITH GENUINE SERVICES"
+text_5: "- TEAM NOCTIFLOW"
+text_6: "We know how important it is to have the right Logo and Designs to achieve the best marketing outcome for your business and that is why Noctiflow will make that happen for you."
+text_7: "You have questions? We have the answers!"
+text_8: "Contact us if you have any questions regarding the services we provide"
+text_9: "WordPress Site"
+text_10: "e-Commerce Site"
+text_11: "Single Page Site"
+text_12: "Website Redesign"
+text_13: "Web Application"
+text_14: "Maintenance"
+text_15: "Security"
+text_16: "Custom Design"
+text_17: "UX/UI Design"
+text_18: "Photography"
+text_19: "Logo Design"
+text_20: "Business Card"
+text_21: "SEO"
+text_22: "Optimization"
+text_23: "Multilingual"
+text_24: "Tech Consulting"
+text_25: "Traffic Analysis"
+text_26: "Hello"
+text_27: "I love solving tech problems and crafting enjoyable user experiences"
+text_28: "Hi!"
+text_29: "Coffee = Coding Right?"
+text_30: "I'm Nic!"
+text_31: "Let us know what you're looking for and we'll offer you a FREE quote! Fill us in with your ideas and we'll let you know what we can do for you. Even if it's the simplest concept we can definitely work it out step by step."
+text_32: "EMAIL"
+text_33: "Backup"
+
+
+send_btn: "Send Message"
+close_btn: "Close Project"
+
+
+
+errors:
+  messages:
+    blank: "Please fill in the missing fields."
