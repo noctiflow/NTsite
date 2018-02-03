@@ -23,9 +23,8 @@ module NTsite
     # -- all .rb files in that directory are automatically loaded.
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
     config.i18n.default_locale = :en
-    config.i18n.available_locales = [:en, :zh_TW]
     # uncomment if multilingual
-    # config.i18n.available_locales = [:en, :zh_TW]
-    # config.i18n.fallbacks = true
+    config.i18n.available_locales = [:en, :zh_TW]
+    config.i18n.fallbacks = true
   end
 end
