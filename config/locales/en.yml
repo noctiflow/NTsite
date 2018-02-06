@@ -52,7 +52,15 @@ en:
   header_22: "PRICING"
   header_23: "PORTFOLIO"
   header_24: "Click Here For More"
-
+  header_25: "Noctiflow Technologies Portfolio"
+  header_26: "Sachiel Water Inc."
+  header_27: "Click Here To Visit Site"
+  header_28: "Noctiflow Company - Demo"
+  header_29: "Noctiflow Restaurant - Demo"
+  header_30: "Noctiflow Bike Shop - Demo"
+  header_31: "AA Plus Restaurant"
+  header_32: "Aroma Coffee Vancouver"
+  header_33: "GET IN TOUCH WITH US TODAY!"
 
 
   text_1: "Noctiflow Technologies is a Vancouver based web design company that was founded in 2017."
@@ -62,12 +70,12 @@ en:
   text_5: "- TEAM NOCTIFLOW"
   text_6: "We know how important it is to have the right Logo and Designs to achieve the best marketing outcome for your business and that is why Noctiflow will make that happen for you."
   text_7: "You have questions? We have the answers!"
-  text_8: "Contact us if you have any questions regarding the services we provide"
+  text_8: "Have an idea for a larger scale application? Something with dynamic content for an audience of millions? Whether it's a single page app, a blog, e-commerce, or anything else you have in mind, we'll be happy to put it together for you."
   text_9: "WordPress Site"
   text_10: "e-Commerce Site"
   text_11: "Single Page Site"
   text_12: "Website Redesign"
-  text_13: "Web Application"
+  text_13: "Rails Web Application"
   text_14: "Maintenance"
   text_15: "Security"
   text_16: "Custom Design"
@@ -88,6 +96,8 @@ en:
   text_31: "Let us know what you're looking for and we'll offer you a FREE quote! Fill us in with your ideas and we'll let you know what we can do for you. Even if it's the simplest concept we can definitely work it out step by step."
   text_32: "EMAIL"
   text_33: "Backup"
+  text_34: "Contact us if you have any questions regarding the services we provide"
+
 
 
   send_btn: "Send Message"
