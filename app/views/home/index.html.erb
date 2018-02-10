@@ -52,9 +52,9 @@
             <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
           </div>
           <div class="post-txt">
-            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_4') %><center style="color:white;font-size:1.0vw;"><%= t('text_5') %></center></p>
-            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_6') %></p>
-            <center><i style="color: white;" class=" material-icons faa-bounce animated">thumb_up</i></center>
+            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: center;"><%= t('text_4') %><center style="color:white;font-size:1.0vw;"><%= t('text_5') %></center></p>
+            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: center;"><%= t('text_6') %></p>
+            <center><i style="color: white; margin-top: 40px;" class=" material-icons faa-bounce animated">thumb_up</i></center>
           </div>
         </div>
         <!-- /post -->
@@ -66,7 +66,8 @@
           <div class="post-txt">
             <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: center;"><%= t('text_7') %></p>
             <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: center;"><%= t('text_8') %></p>
-            <center><a style="margin-top: 5%;" title="Contact Us" href="#contact_us" class="faa-shake animated"><i class="iconcss material-icons">mail</i></a></center>
+            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: center;"><%= t('text_34') %></p>
+            <center><a style="margin-top: 5%;" title="Contact Us" href="#contact_us"><i class="iconcss material-icons faa-shake animated">mail</i></a></center>
           </div>
         </div>
         <!-- /post -->
@@ -121,7 +122,7 @@
       <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:13%; padding-bottom: 3%;"></div>
       <div class="col-md-4">
 
-        <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: left; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated">build</i><%= t('header_10') %></p>
+        <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated">build</i><span style="margin-left: 5px;"><%= t('header_10') %></span></p>
         <center>
           <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_9') %></div>
           <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_10') %></div>
@@ -133,7 +134,7 @@
         </center>
       </div>
       <div class="col-md-4">
-        <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated"><i class="material-icons">camera_enhance</i></i><%= t('header_11') %></p>
+        <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated"><i class="material-icons">camera_enhance</i></i><span style="margin-left: 5px;"><%= t('header_11') %></span></p>
         <center>
           <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_16') %></div>
           <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_17') %></div>
@@ -143,7 +144,7 @@
         </center>
       </div>
       <div class="col-md-4">
-        <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated">lightbulb_outline</i><%= t('header_12') %></p>
+        <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated">lightbulb_outline</i><span style="margin-left: 5px;"><%= t('header_12') %></span></p>
         <center>
           <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_21') %></div>
           <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_22') %></div>
@@ -239,7 +240,11 @@
       <div class="shadowboxbuttoncontainer">
         <center>
         <div class="shadowboxbuttonright">
+          <% if I18n.locale == I18n.default_locale %>
             <a href="/portfolio"><button type="button" class="btn btn-primary btn-lg btn3d"><%= t('header_24') %></button></a>
+          <% else %>
+            <a href="/zh_TW/portfolio"><button type="button" class="btn btn-primary btn-lg btn3d"><%= t('header_24') %></button></a>
+          <%end%>
         </div>
       </center>
       </div>
@@ -380,7 +385,8 @@
         <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center"><%= t('text_31') %></p>
         <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
         <center>
-            <a href="#contact_us"><button type="button" class="btn btn-primary btn-lg btn3d"><%= t('header_21') %></button></a>
+            <a href="#contact_us"><button type="button" class="btn btn-primary btn-lg btn3d"><%= t('header_21') %><span style="margin-left: 10px;"><i class="iconcss material-icons faa-shake animated">mail</i></span></button></a>
+
         </center>
     </div>
     <div class="shadowboxright-header">
