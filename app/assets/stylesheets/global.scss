@@ -1,89 +1,331 @@
 //keep all global styling in this file
+.s {
+  width: 100%;
+  height: 45vw;
+  position: relative;
+  display: inline-block;
+  @include mobile{
+    margin-top: 45vw;
+  }
+  @include tablet{
+    margin-top: 22vw;
+  }
+  @include desktop{
+    margin-top: 16vw;
+  }
+  @include desktopxl{
+    margin-top: 10%;
+  }
+}
 .ctnbox{
   z-index: 1200;
 }
-.shadowboxright-bottom{
-  margin-left:11%;
-  margin-top:-7px;
+#about_us{
   @include mobile{
-    height:10vw;
-    margin-left:4.3%;
+    padding-top:90vw;
   }
   @include tablet{
-    height:7.5vw;
+    padding-top:65vw;
   }
   @include desktop{
-    height:5.8vw;
+    padding-top:20vw;
   }
   @include desktopxl{
-    height:5.2vw;
+    padding-top:10vw;
   }
 }
-.shadowboxleft-bottom {
-  margin-right: 11%;
-  margin-top: -7px;
-
+.shadowboxright-bottom{
+  margin-top:-1px;
+  position: relative;
+  height:7vw;
+  width:90%;
+  margin-left:7vw;
   @include mobile{
-    width:96%;
-    height:10vw;
-    margin-left:0%;
+    margin-left: 0;
+    width:100%;
   }
   @include tablet{
-    height:7.5vw;
+    margin-left: 10vw;
   }
   @include desktop{
-    height:5.8vw;
+    margin-left: 8vw;
   }
-  @include desktopxl{
-    height:5.2vw;
+
+}
+.shadowboxleft-bottom {
+  margin-top:-1px;
+  position: relative;
+  height:7vw;
+  width:90%;
+  margin-right:7vw;
+  @include mobile{
+    margin-right: 0;
+    width:100%;
+  }
+  @include tablet{
+    margin-right: 10vw;
+  }
+  @include desktop{
+    margin-right: 8vw;
   }
 }
 .shadowbox-bg{
+  position: relative;
+  width:80%;
+  background-color: #666;
+  margin-left:10%;
+  margin-top:0.5%;
+  padding:5%;
+  @include mobile{
+    width:100%;
+    margin-left:0;
+  }
+
+}
+.sh1{
+  height:100%;
+  left:0;
+  display: inline-block;
+  width:20%;
   @include tablet{
-    padding: 0.5% 10% 0% 10%;
+    width:15%;
+  }
+  @include mobile{
+    width:10%;
+  }
+}
+.sh2{
+  position: absolute;
+  background-color: #666;
+  height:100%;
+  width:80.2%;
+  display: inline-block;
+  right:0;
+  @include tablet{
+    width:85.2%;
+  }
+  @include mobile{
+    width:90.2%;
+  }
+}
+.sh1-left{
+  position: absolute;
+  height:100%;
+  right:0;
+  display: inline-block;
+  width:20%;
+  @include tablet{
+    width:15%;
+  }
+  @include mobile{
+    width:10%;
+  }
+}
+.sh2-left{
+  position: absolute;
+  background-color: #666;
+  height:100%;
+  width:80.2%;
+  display: inline-block;
+  left:0;
+  @include tablet{
+    width:85.2%;
+  }
+  @include mobile{
+    width:90.2%;
+  }
+}
+.sh3{
+  z-index:-1;
+  height:100%;
+  margin-left:18%;
+  display: inline-block;
+  @include desktopxl{
+    width:7.7vw;
   }
   @include desktop{
-    padding: 0.5% 10% 0% 10%;
+    width:9vw;
   }
-  @include desktopxl {
-    padding: 0.5% 10% 0% 10%;
+  @include tablet{
+    margin-left:13%;
+    width:9vw;
+  }
+  @include mobile{
+    margin-left:10%;
+    width:10vw;
+  }
+}
+.sh4{
+  z-index:22;
+  background-color: #111;
+  position: absolute;
+  right:0;
+  height:100%;
+  display: inline-block;
+  @include desktopxl{
+    width:70%;
+  }
+  @include desktop{
+    width:69.6%;
+  }
+  @include tablet{
+    width:77.6%;
+  }
+  @include mobile{
+    width:80%;
+  }
+}
+.sh5{
+  z-index:22;
+  position: absolute;
+  right:0;
+  height:100%;
+  @include desktopxl{
+    width:16%;
+  }
+  @include desktop{
+    width:15.8%;
+  }
+  @include tablet{
+    width:14.5%;
+  }
+  @include mobile{
+    display:none;
+  }
+}
+.sh3-left{
+  z-index:-1;
+  height:100%;
+  margin-right:18%;
+  display: inline-block;
+  right:0;
+  position: absolute;
+  @include desktopxl{
+    width:7.7vw;
+  }
+  @include desktop{
+    width:9vw;
+  }
+  @include tablet{
+    margin-right:13%;
+    width:9vw;
+  }
+  @include mobile{
+    margin-right:10%;
+    width:10vw;
+  }
+}
+.sh4-left{
+  z-index:22;
+  background-color: #111;
+  position: absolute;
+  left:0;
+  height:100%;
+  display: inline-block;
+  @include desktopxl{
+    width:70%;
+  }
+  @include desktop{
+    width:69.6%;
+  }
+  @include tablet{
+    width:77.6%;
+  }
+  @include mobile{
+    width:80%;
+  }
+}
+.sh5-left{
+  z-index:22;
+  position: absolute;
+  left:0;
+  height:100%;
+  @include desktopxl{
+    width:16%;
+  }
+  @include desktop{
+    width:15.8%;
+  }
+  @include tablet{
+    width:14.5%;
+  }
+  @include mobile{
+    display:none;
+  }
+}
+.sh6{
+  z-index:1;
+  width:100%;
+  height:7vw;
+  position: absolute;
+  top:0;
+}
+.sh7{
+  z-index:-2;
+  margin-top:-1px;
+  width:100%;
+  height:auto;
+  background-color: #333;
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin-top:6.9vw;
+  margin-bottom:6.9vw;
+ }
+.shadowboxright-bgunder{
+  z-index:55;
+  margin-top: -1px;
+  position: relative;
+  width:80%;
+  height:10vw;
+  margin-left:10%;
+  @include mobile{
+    width:100%;
+    margin-left:0;
+  }
+}
+.shadowboxleft-bgunder{
+  z-index:55;
+  margin-top: -1px;
+  position: relative;
+  width:80%;
+  height:10vw;
+  margin-left:10%;
+  @include mobile{
+    width:100%;
+    margin-left:0;
   }
 }
 .shadowboxright-right{
   position: absolute;
+  top:0;
   right:0;
+  width:7vw;
   height:100%;
-  margin-top:0.5%;
+  @include desktop{
+    width:8vw;
+  }
+  @include tablet{
+    width:10vw;
+  }
   @include mobile{
     display:none;
   }
-  @include tablet{
-    width:10%;
-  }
-  @include desktop{
-    width:10%;
-  }
-  @include desktopxl{
-    width:10%;
-  }
-
 }
 .shadowboxleft-left {
   position: absolute;
-  left: 0;
-  height: 100%;
-  margin-top: 0.5%;
-  @include mobile{
-    display:none;
+  top:0;
+  left:0;
+  width:7vw;
+  height:100%;
+  @include desktop{
+    width:8vw;
   }
   @include tablet{
-    width:10%;
+    width:10vw;
   }
-  @include desktop{
-    width:10%;
-  }
-  @include desktopxl{
-    width:10%;
+  @include mobile{
+    display:none;
   }
 }
 .shadowboxbuttoncontainer{
@@ -92,11 +334,11 @@
   position:absolute;
 }
 .shadowboxbuttonright{
-  width:20vw;
+  width:1vw;
   position:absolute;
   bottom:0;
-  right:0;
-  margin-right:80%;
+  left:0;
+  margin-right:0%;
   margin-bottom:120%;
   // background-color: #c9596b;
   border-radius: 5px;
@@ -119,65 +361,98 @@
 }
 .shadowboxcontainer{
   position:relative;
+
   @include desktop{
     width: 80%;
-    margin: 0% 10% 10% 10%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   @include desktopxl {
     width: 70%;
-    margin: 0% 15% 10% 15%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 .shadowboxright-innerbox{
-  position:absolute;
   left:0;
   margin-top:13%;
-  margin-left:15%;
-  width:70%;
+  margin-left:5%;
+  width:90%;
   height:55%;
   z-index: 10;
   border:thin #aaa solid;
   background-color: #888;
   border-radius: 1%;
-  padding:2% 5% 1.5% 3%;
+  //padding:2% 5% 1.5% 3%;
   box-shadow: 2px 4px 5px #333;
+  @include mobile{
+    width:80%;
+    margin-left:10%;
+    margin-top:15%;
+  }
 }
 .shadowboxleft-innerbox{
-  position:absolute;
   left:0;
   margin-top:13%;
-  margin-left:15%;
-  width:70%;
+  margin-left:5%;
+  width:90%;
   min-height:55%;
   z-index: 10;
   border:thin #aaa solid;
   background-color: #888;
   border-radius: 1%;
-  padding:2% 5% 1.5% 3%;
   box-shadow: -2px 4px 5px #333;
+  @include mobile{
+    width: 80%;
+    margin-left: 10%;
+    margin-top:15%;
+  }
 }
 .shadowboxright-header{
   position:absolute;
   left:0;
+  top:0;
   margin-left:9.5%;
-  width:36%;
-  height:11%;
+  margin-top:-0.5%;
   @include mobile{
     margin-left:0;
-    width:40%;
-    height:10%;
+    width:36vw;
+    height:11vw;
+  }
+  @include tablet{
+    width:30vw;
+    height:8vw;
+  }
+  @include desktop{
+    width:20vw;
+    height:6vw;
+  }
+  @include desktopxl{
+    width:17vw;
+    height:5vw;
   }
 }
 .shadowboxleft-header {
   position: absolute;
   right: 0;
+  top: 0;
   margin-right: 9.5%;
-  width: 36%;
-  height: 11%;
   @include mobile{
     margin-right:0;
-    width:40%;
-    height:10%;
+    width: 36vw;
+    height: 11vw;
+  }
+  @include tablet{
+    width:30vw;
+    height:8vw;
+  }
+  @include desktop{
+    width:20vw;
+    height:6vw;
+  }
+  @include desktopxl{
+    width:17vw;
+    height:5vw;
   }
 }
 *{
