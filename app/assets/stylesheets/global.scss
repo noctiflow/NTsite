@@ -409,6 +409,7 @@
   }
 }
 .shadowboxright-header{
+  z-index: 999;
   position:absolute;
   left:0;
   top:0;
@@ -433,10 +434,12 @@
   }
 }
 .shadowboxleft-header {
+  z-index:999;
   position: absolute;
   right: 0;
   top: 0;
   margin-right: 9.5%;
+  margin-top:-0.5%;
   @include mobile{
     margin-right:0;
     width: 36vw;
