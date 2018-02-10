@@ -41,7 +41,7 @@ GEM
     animate-rails (1.0.10)
       rails
     arel (7.1.4)
-    autoprefixer-rails (7.1.4)
+    autoprefixer-rails (7.1.4.1)
       execjs
     awesome_print (1.7.0)
     bcrypt (3.1.11)

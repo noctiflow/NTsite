@@ -4,74 +4,15 @@
   <!--<div id="stars3"></div>-->
 </div>
 <br>
-<div class="s" style="width:100%;height:45vw;margin-top:8vw;position:relative;display:inline-block">
+<div class="s">
   <div id="outro" class="animated fadeOut" style="position:absolute;left:0; width:100%;padding-right:42.5vw;padding-left:34vw"><%= image_tag "general/left.png", :class => "img-responsive animated fadeInLeft" %></div>
   <div id="outro" class="animated fadeOut" style="position:absolute;right:0;width:100%;padding-left:42.1vw;padding-right:34.3vw"><%= image_tag "general/right.png", :class => "img-responsive animated fadeInRight" %></div>
   <div id="goldfade" class="animated fadeIn" style="position:absolute;width:100%;padding-left:35vw;padding-right:35vw"><%= image_tag "general/gold.png", :class => "img-responsive" %></div>
   <div id="nf" class="animated fadeIn" style="display:flex;justify-content: center;padding-top:30vw"><%=image_tag "portfolio/noctiflow_text_512-g.png"%></div>
 </div>
 
-<div id="about_us" class="ctnbox" style="padding-top:10%">
+<div id="about_us" class="ctnbox">
   <div class="shadowboxcontainer">
-    <div class="shadowboxright-innerbox">
-
-        <ul class="filtermenu">
-        <li class="bubbly-button faa-float animated-hover" data-filter="mission"><%= t('header_1') %></li>
-        <li class="bubbly-button faa-float animated-hover" data-filter="concept"><%= t('header_2') %></li>
-        <li class="bubbly-button faa-float animated-hover" data-filter="history"><%= t('header_3') %></li>
-        <li class="bubbly-button faa-float animated-hover" data-filter="history"><%= t('header_4') %></li>
-        </ul>
-        <div class="container">
-        <div class="post history">
-          <div class="post-title">
-            <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_5') %></h1>
-            <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
-          </div>
-          <div class="post-txt">
-            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_1') %></p>
-            <center><span style="color: white;" class="material-icons faa-wrench animated faa-slow"><i class="fa fa-book" aria-hidden="true"></i></span></center>
-          </div>
-        </div>
-        <!-- /post -->
-        <div class="post concept">
-          <div class="post-title">
-            <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_6') %></h1>
-            <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
-          </div>
-          <div class="post-txt">
-            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_2') %></p>
-
-            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_3') %></p>
-            <center><i style="color: white;" class="material-icons faa-spin animated">settings</i></center>
-          </div>
-        </div>
-        <!-- /post -->
-        <div class="post mission">
-          <div class="post-title">
-            <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_7') %></h1>
-            <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
-          </div>
-          <div class="post-txt">
-            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_4') %><center style="color:white;font-size:1.0vw;"><%= t('text_5') %></center></p>
-            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_6') %></p>
-            <center><i style="color: white;" class=" material-icons faa-bounce animated">thumb_up</i></center>
-          </div>
-        </div>
-        <!-- /post -->
-        <div class="post question">
-          <div class="post-title">
-            <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_8') %></h1>
-            <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
-          </div>
-          <div class="post-txt">
-            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: center;"><%= t('text_7') %></p>
-            <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: center;"><%= t('text_8') %></p>
-            <center><a style="margin-top: 5%;" title="Contact Us" href="#contact_us" class="faa-shake animated"><i class="iconcss material-icons">mail</i></a></center>
-          </div>
-        </div>
-        <!-- /post -->
-      </div>
-    </div>
     <div class="shadowboxright-header">
       <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" style="z-index:2;filter: drop-shadow( 5px 5px 5px #222 );
           padding-left:0px;" >
@@ -86,27 +27,98 @@
       </svg>
     </div>
 
-    <div class="shadowboxright-right">
-      <div class="shadowboxbuttoncontainer">
-        <div class="shadowboxbuttonright">
-          <!-- <a type="button" class="btn btn-primary btn-lg bubbly-button" style="background-color:rgba(62, 213, 255, 0.94); color: white; top:25px;font-size:1.2vw;">More</a> -->
+    <div class="shadowbox-bg">
+      <div class="shadowboxright-innerbox">
+
+        <ul class="filtermenu">
+          <li class="bubbly-button faa-float animated-hover" data-filter="mission"><%= t('header_1') %></li>
+          <li class="bubbly-button faa-float animated-hover" data-filter="concept"><%= t('header_2') %></li>
+          <li class="bubbly-button faa-float animated-hover" data-filter="history"><%= t('header_3') %></li>
+          <li class="bubbly-button faa-float animated-hover" data-filter="history"><%= t('header_4') %></li>
+        </ul>
+        <div class="container">
+          <div class="post history">
+            <div class="post-title">
+              <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_5') %></h1>
+              <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
+            </div>
+            <div class="post-txt">
+              <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_1') %></p>
+              <center><span style="color: white;" class="material-icons faa-wrench animated faa-slow"><i class="fa fa-book" aria-hidden="true"></i></span></center>
+            </div>
+          </div>
+          <!-- /post -->
+          <div class="post concept">
+            <div class="post-title">
+              <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_6') %></h1>
+              <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
+            </div>
+            <div class="post-txt">
+              <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_2') %></p>
+
+              <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_3') %></p>
+              <center><i style="color: white;" class="material-icons faa-spin animated">settings</i></center>
+            </div>
+          </div>
+          <!-- /post -->
+          <div class="post mission">
+            <div class="post-title">
+              <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_7') %></h1>
+              <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
+            </div>
+            <div class="post-txt">
+              <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_4') %><center style="color:white;font-size:1.0vw;"><%= t('text_5') %></center></p>
+              <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_6') %></p>
+              <center><i style="color: white;" class=" material-icons faa-bounce animated">thumb_up</i></center>
+            </div>
+          </div>
+          <!-- /post -->
+          <div class="post question">
+            <div class="post-title">
+              <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_8') %></h1>
+              <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
+            </div>
+            <div class="post-txt">
+              <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: center;"><%= t('text_7') %></p>
+              <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: center;"><%= t('text_8') %></p>
+              <center><a style="margin-top: 5%;" title="Contact Us" href="#contact_us" class="faa-shake animated"><i class="iconcss material-icons">mail</i></a></center>
+            </div>
+          </div>
         </div>
       </div>
-
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0 0,0 91,100 99,100 9" style="fill:#333;" />
-      </svg>
     </div>
 
-    <div class="shadowbox-bg">
-      <svg height="100%" width="100%" viewBox="0 0 100 100">
-        <polygon points="0 80,20 100,100 100,100 0,0 0" style="fill:#666;" />
-      </svg>
+    <div class="shadowboxright-bgunder">
+      <div class="sh1">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,100 100,100 0" style="fill:#666;" />
+        </svg>
+      </div>
+      <div class="sh2">
+      </div>
+    </div>
+
+    <div class="shadowboxright-right">
+      <div class="sh6">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,0 100,100 100" style="fill:#333;" />
+        </svg>
+      </div>
+      <div class="sh7"></div>
     </div>
     <div class="shadowboxright-bottom">
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="16.5 0,26 100,100 100,100 0,0 0" style="fill:#0c0c0c;" />
-      </svg>
+      <div class="sh3">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,100 100,100 0" style="fill:#111;" />
+        </svg>
+      </div>
+      <div class="sh4">
+        <div class="sh5">
+          <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="0 0,100 100,100 0" style="fill:#333;" />
+          </svg>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -116,46 +128,6 @@
 
 <div id="services" class="ctnbox" style="padding-top:10%">
   <div class="shadowboxcontainer">
-    <div class="shadowboxleft-innerbox">
-
-      <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:13%; padding-bottom: 3%;"></div>
-      <div class="col-md-4">
-
-        <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: left; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated">build</i><%= t('header_10') %></p>
-        <center>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_9') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_10') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_11') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_12') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_13') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_14') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_15') %></div>
-        </center>
-      </div>
-      <div class="col-md-4">
-        <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated"><i class="material-icons">camera_enhance</i></i><%= t('header_11') %></p>
-        <center>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_16') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_17') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_18') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_19') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_20') %></div>
-        </center>
-      </div>
-      <div class="col-md-4">
-        <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated">lightbulb_outline</i><%= t('header_12') %></p>
-        <center>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_21') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_22') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_23') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_24') %></div>
-          <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_25') %></div>
-        </center>
-      </div>
-      <div style="padding-top: 2%;" class="col-md-12">
-        <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:2%;margin-bottom:4%;"></div>
-      </div>
-    </div>
     <div class="shadowboxleft-header">
       <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" style="z-index:2;filter: drop-shadow( -5px 5px 5px #222 );
           padding-left:0px;" >
@@ -166,32 +138,83 @@
           </linearGradient>
         </defs>
         <polygon points="10 100,100 100,100 0,0 0" style="fill:url(#grad2);" />
-        <text fill="#ffffff" transform="scale(0.4,1.5)" font-size="30" x="120" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_13') %></text>
-      </svg>
-    </div>
-    <div class="shadowboxleft-left">
-      <div class="shadowboxbuttoncontainer">
-        <div class="shadowboxbuttonleft">
-
-        </div>
-      </div>
-
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0 9,0 99,100 91,100 0" style="fill:#333;" />
+        <text fill="#ffffff" transform="scale(0.4,1.5)" font-size="30" x="133" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_13') %></text>
       </svg>
     </div>
     <div class="shadowbox-bg">
-      <svg height="100%" width="100%" viewBox="0 0 100 100">
-        <polygon points="0 0,0 100,80 100,100 80,100 0" style="fill:#666;" />
-      </svg>
+      <div class="shadowboxleft-innerbox">
+        <div class="container">
+          <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:13%; padding-bottom: 3%;"></div>
+          <div class="col-md-4">
+
+            <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: left; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated">build</i><%= t('header_10') %></p>
+            <center>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_9') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_10') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_11') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_12') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_13') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_14') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_15') %></div>
+            </center>
+          </div>
+          <div class="col-md-4">
+            <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated"><i class="material-icons">camera_enhance</i></i><%= t('header_11') %></p>
+            <center>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_16') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_17') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_18') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_19') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_20') %></div>
+            </center>
+          </div>
+          <div class="col-md-4">
+            <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated">lightbulb_outline</i><%= t('header_12') %></p>
+            <center>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_21') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_22') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_23') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_24') %></div>
+              <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_25') %></div>
+            </center>
+          </div>
+          <div style="padding-top: 2%;" class="col-md-12">
+            <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:2%;margin-bottom:4%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shadowboxleft-bgunder">
+      <div class="sh2-left"></div>
+      <div class="sh1-left">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,0 100,100 0" style="fill:#666;" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="shadowboxleft-left">
+      <div class="sh6">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 100,100 0,100 100" style="fill:#333;" />
+        </svg>
+      </div>
+      <div class="sh7"></div>
     </div>
     <div class="shadowboxleft-bottom">
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0 100,72 100,83.5 0,0 0" style="fill:#0c0c0c;" />
-      </svg>
-
-      <!--<polygon points="16.5 0,28 100,100 100,100 0,0 0" style="fill:#0c0c0c;" />-->
-
+      <div class="sh3-left">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,0 100,100 0" style="fill:#111;" />
+        </svg>
+      </div>
+      <div class="sh4-left">
+        <div class="sh5-left">
+          <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="0 0,0 100,100 0" style="fill:#333;" />
+          </svg>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -200,27 +223,6 @@
 
 <div id="portfolio" class="ctnbox" style="padding-top:10%">
   <div class="shadowboxcontainer">
-    <div style="width: 80%; margin-left: 11%; height: 50%; margin-top: 16%;" class="shadowboxright-innerbox hidebox">
-
-      <div style="box-shadow: 4px 8px 10px #333;" id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-          <ol class="carousel-indicators">
-              <li data-target="#carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel" data-slide-to="1"></li>
-              <li data-target="#carousel" data-slide-to="2"></li>
-          </ol>
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-              <img class="img-responsive active item" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>">
-              <img class="img-responsive item" src="<%= asset_path( 'portfolio/aroma_full.jpg' ) %>">
-              <img class="img-responsive item" src="<%= asset_path( 'portfolio/aaplus_full.jpg' ) %>">
-
-          </div>
-          <!-- Carousel nav -->
-          <a class="carousel-control left" href="#carousel" data-slide="prev"></a>
-          <a class="carousel-control right" href="#carousel" data-slide="next"></a>
-      </div>
-
-    </div>
     <div class="shadowboxright-header">
       <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" style="z-index:2;filter: drop-shadow( 5px 5px 5px #222 );
           padding-left:0px;" >
@@ -235,29 +237,61 @@
       </svg>
     </div>
 
-    <div class="shadowboxright-right">
-      <div class="shadowboxbuttoncontainer">
-        <center>
-        <div class="shadowboxbuttonright">
-            <a href="/portfolio"><button type="button" class="btn btn-primary btn-lg btn3d"><%= t('header_24') %></button></a>
-        </div>
-      </center>
-      </div>
+    <div class="shadowbox-bg">
+        <div style="width: 100%; margin-left: 0%; height: 50%; margin-top: 10%;" class="shadowboxright-innerbox hidebox">
 
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0 0,0 91,100 99,100 9" style="fill:#333;" />
-      </svg>
+          <div style="box-shadow: 4px 8px 10px #333;" id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <img class="img-responsive active item" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>">
+              <img class="img-responsive item" src="<%= asset_path( 'portfolio/aroma_full.jpg' ) %>">
+              <img class="img-responsive item" src="<%= asset_path( 'portfolio/aaplus_full.jpg' ) %>">
+
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#carousel" data-slide="prev"></a>
+            <a class="carousel-control right" href="#carousel" data-slide="next"></a>
+          </div>
+
+        </div>
     </div>
 
-    <div class="shadowbox-bg">
-      <svg height="100%" width="100%" viewBox="0 0 100 100">
-        <polygon points="0 80,20 100,100 100,100 0,0 0" style="fill:#666;" />
-      </svg>
+    <div class="shadowboxright-bgunder">
+      <div class="sh1">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,100 100,100 0" style="fill:#666;" />
+        </svg>
+      </div>
+      <div class="sh2">
+      </div>
+    </div>
+
+    <div class="shadowboxright-right">
+      <div class="sh6">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,0 100,100 100" style="fill:#333;" />
+        </svg>
+      </div>
+      <div class="sh7"></div>
     </div>
     <div class="shadowboxright-bottom">
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="16.5 0,26 100,100 100,100 0,0 0" style="fill:#0c0c0c;" />
-      </svg>
+      <div class="sh3">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,100 100,100 0" style="fill:#111;" />
+        </svg>
+      </div>
+      <div class="sh4">
+        <div class="sh5">
+          <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="0 0,100 100,100 0" style="fill:#333;" />
+          </svg>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -267,72 +301,6 @@
 
 <div id="team" class="ctnbox" style="padding-top:10%">
   <div class="shadowboxcontainer">
-    <div class="shadowboxleft-innerbox">
-      <center>
-      <div style="margin-top: 10%;" class="jumbotron-fluid">
-        <div class="col-lg-4">
-          <div class="team-member center-block">
-                <div class="team-img">
-                    <img src="<%= asset_path( 'team/jeff.jpg' ) %>" alt="team member" class="img-responsive teamimg">
-                </div>
-                <div class="team-hover">
-                    <div class="desk">
-                        <h4><%= t('text_26') %></h4>
-                        <p><%= t('text_27') %></p>
-                    </div>
-                    <div class="s-link">
-                        <a href="mailto:jeff@noctiflow.com?Subject=Hi Jeff!"><i class="fa fa-envelope-o faa-pulse animated-hover"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="team-title">
-                <h3><%= t('header_14') %></h3>
-                <span><%= t('header_15') %></span>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="team-member center-block">
-                  <div class="team-img">
-                      <img src="<%= asset_path( 'team/richard.jpg' ) %>" alt="team member" class="img-responsive teamimg">
-                  </div>
-                  <div class="team-hover">
-                      <div class="desk">
-                          <h4><%= t('text_28') %></h4>
-                          <p><%= t('text_29') %></p>
-                      </div>
-                      <div class="s-link">
-                          <a href="mailto:richard@noctiflow.com?Subject=Hi Jeff!"><i class="fa fa-envelope-o faa-pulse animated-hover"></i></a>
-                      </div>
-                  </div>
-              </div>
-              <div class="team-title">
-                  <h3><%= t('header_16') %></h3>
-                  <span><%= t('header_15') %></span>
-              </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="team-member center-block">
-                  <div class="team-img">
-                      <img src="<%= asset_path( 'team/nic.jpg' ) %>" alt="team member" class="img-responsive teamimg">
-                  </div>
-                  <div class="team-hover">
-                      <div class="desk">
-                          <h4><%= t('text_28') %></h4>
-                          <p><%= t('text_30') %></p>
-                      </div>
-                      <div class="s-link">
-                          <a href="mailto:nic@noctiflow.com?Subject=Hi Jeff!"><i class="fa fa-envelope-o faa-pulse animated-hover"></i></a>
-                      </div>
-                  </div>
-              </div>
-              <div class="team-title">
-                  <h3><%= t('header_17') %></h3>
-                  <span><%= t('header_18') %></span>
-              </div>
-        </div>
-      </div>
-    </center>
-    </div>
     <div class="shadowboxleft-header">
       <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" style="z-index:2;filter: drop-shadow( -5px 5px 5px #222 );
           padding-left:0px;" >
@@ -343,30 +311,110 @@
           </linearGradient>
         </defs>
         <polygon points="10 100,100 100,100 0,0 0" style="fill:url(#grad2);" />
-        <text fill="#ffffff" transform="scale(0.4,1.5)" font-size="30" x="120" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_19') %></text>
+        <text fill="#ffffff" transform="scale(0.4,1.5)" font-size="30" x="133" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_19') %></text>
       </svg>
     </div>
-    <div class="shadowboxleft-left">
-      <div class="shadowboxbuttoncontainer">
 
-      </div>
-
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0 9,0 99,100 91,100 0" style="fill:#333;" />
-      </svg>
-    </div>
     <div class="shadowbox-bg">
-      <svg height="100%" width="100%" viewBox="0 0 100 100">
-        <polygon points="0 0,0 100,80 100,100 80,100 0" style="fill:#666;" />
-      </svg>
+      <div class="shadowboxleft-innerbox">
+        <div class="container">
+          <div style="margin-top: 10%;" class="jumbotron-fluid">
+            <div class="col-lg-4">
+              <div class="team-member center-block">
+                    <div class="team-img">
+                        <img src="<%= asset_path( 'team/jeff.jpg' ) %>" alt="team member" class="img-responsive teamimg">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <h4><%= t('text_26') %></h4>
+                            <p><%= t('text_27') %></p>
+                        </div>
+                        <div class="s-link">
+                            <a href="mailto:jeff@noctiflow.com?Subject=Hi Jeff!"><i class="fa fa-envelope-o faa-pulse animated-hover"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-title">
+                    <h3><%= t('header_14') %></h3>
+                    <span><%= t('header_15') %></span>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member center-block">
+                      <div class="team-img">
+                          <img src="<%= asset_path( 'team/richard.jpg' ) %>" alt="team member" class="img-responsive teamimg">
+                      </div>
+                      <div class="team-hover">
+                          <div class="desk">
+                              <h4><%= t('text_28') %></h4>
+                              <p><%= t('text_29') %></p>
+                          </div>
+                          <div class="s-link">
+                              <a href="mailto:richard@noctiflow.com?Subject=Hi Jeff!"><i class="fa fa-envelope-o faa-pulse animated-hover"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="team-title">
+                      <h3><%= t('header_16') %></h3>
+                      <span><%= t('header_15') %></span>
+                  </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="team-member center-block">
+                <div class="team-img">
+                  <img src="<%= asset_path( 'team/nic.jpg' ) %>" alt="team member" class="img-responsive teamimg">
+                </div>
+                <div class="team-hover">
+                  <div class="desk">
+                    <h4><%= t('text_28') %></h4>
+                    <p><%= t('text_30') %></p>
+                  </div>
+                  <div class="s-link">
+                    <a href="mailto:nic@noctiflow.com?Subject=Hi Jeff!"><i class="fa fa-envelope-o faa-pulse animated-hover"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-title">
+                  <h3><%= t('header_17') %></h3>
+                  <span><%= t('header_18') %></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shadowboxleft-bgunder">
+      <div class="sh2-left"></div>
+      <div class="sh1-left">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,0 100,100 0" style="fill:#666;" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="shadowboxleft-left">
+      <div class="sh6">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 100,100 0,100 100" style="fill:#333;" />
+        </svg>
+      </div>
+      <div class="sh7"></div>
     </div>
     <div class="shadowboxleft-bottom">
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0 100,72 100,83.5 0,0 0" style="fill:#0c0c0c;" />
-      </svg>
-
-      <!--<polygon points="16.5 0,28 100,100 100,100 0,0 0" style="fill:#0c0c0c;" />-->
-
+      <div class="sh3-left">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,0 100,100 0" style="fill:#111;" />
+        </svg>
+      </div>
+      <div class="sh4-left">
+        <div class="sh5-left">
+          <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="0 0,0 100,100 0" style="fill:#333;" />
+          </svg>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -374,15 +422,6 @@
 
 <div id="pricing" class="ctnbox" style="padding-top:10%">
   <div class="shadowboxcontainer">
-    <div class="shadowboxright-innerbox">
-      <h1 style="font-size:2.8vw;color:#eee; text-align: center; text-shadow: 2px 2px black;"><%= t('header_20') %></h1>
-      <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
-        <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center"><%= t('text_31') %></p>
-        <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
-        <center>
-            <a href="#contact_us"><button type="button" class="btn btn-primary btn-lg btn3d"><%= t('header_21') %></button></a>
-        </center>
-    </div>
     <div class="shadowboxright-header">
       <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" style="z-index:2;filter: drop-shadow( 5px 5px 5px #222 );
           padding-left:0px;" >
@@ -397,27 +436,49 @@
       </svg>
     </div>
 
-    <div class="shadowboxright-right">
-      <div class="shadowboxbuttoncontainer">
-        <div class="shadowboxbuttonright">
-
-        </div>
+    <div class="shadowbox-bg">
+      <div class="shadowboxright-innerbox">
+        <h1 style="font-size:2.8vw;color:#eee; text-align: center; text-shadow: 2px 2px black;"><%= t('header_20') %></h1>
+        <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
+          <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center"><%= t('text_31') %></p>
+          <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
+          <center>
+              <a href="#contact_us"><button type="button" class="btn btn-primary btn-lg btn3d"><%= t('header_21') %></button></a>
+          </center>
       </div>
-
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0 0,0 91,100 99,100 9" style="fill:#333;" />
-      </svg>
     </div>
 
-    <div class="shadowbox-bg">
-      <svg height="100%" width="100%" viewBox="0 0 100 100">
-        <polygon points="0 80,20 100,100 100,100 0,0 0" style="fill:#666;" />
-      </svg>
+    <div class="shadowboxright-bgunder">
+      <div class="sh1">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,100 100,100 0" style="fill:#666;" />
+        </svg>
+      </div>
+      <div class="sh2">
+      </div>
+    </div>
+
+    <div class="shadowboxright-right">
+      <div class="sh6">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,0 100,100 100" style="fill:#333;" />
+        </svg>
+      </div>
+      <div class="sh7"></div>
     </div>
     <div class="shadowboxright-bottom">
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="16.5 0,26 100,100 100,100 0,0 0" style="fill:#0c0c0c;" />
-      </svg>
+      <div class="sh3">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,100 100,100 0" style="fill:#111;" />
+        </svg>
+      </div>
+      <div class="sh4">
+        <div class="sh5">
+          <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="0 0,100 100,100 0" style="fill:#333;" />
+          </svg>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -426,11 +487,6 @@
 
 <div id="contact_us" class="ctnbox" style="padding-top:10%">
   <div class="shadowboxcontainer">
-    <div class="shadowboxleft-innerbox">
-      <h1 style="font-size:2.8vw;color:#eee">"Something something, nice to meet you" - Anonymous</h1>
-      <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
-      <p style="margin-top:3%;color:#eee;font-size:2vw;text-align: right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet autem consequatur delectus dolorem eos facere in inventore n</p>
-    </div>
     <div class="shadowboxleft-header">
       <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" style="z-index:2;filter: drop-shadow( -5px 5px 5px #222 );
           padding-left:0px;" >
@@ -441,37 +497,50 @@
           </linearGradient>
         </defs>
         <polygon points="10 100,100 100,100 0,0 0" style="fill:url(#grad2);" />
-        <text fill="#ffffff" transform="scale(0.4,1.5)" font-size="30" x="120" y="45" text-anchor="middle" alignment-baseline="central" >Contact Us</text>
+        <text fill="#ffffff" transform="scale(0.4,1.5)" font-size="30" x="133" y="45" text-anchor="middle" alignment-baseline="central" >Contact Us</text>
       </svg>
     </div>
-    <div class="shadowboxleft-left">
-      <div class="shadowboxbuttoncontainer">
-        <div class="shadowboxbuttonleft">
 
-        </div>
-      </div>
-
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0 9,0 99,100 91,100 0" style="fill:#333;" />
-      </svg>
-    </div>
     <div class="shadowbox-bg">
-      <svg height="100%" width="100%" viewBox="0 0 100 100">
-        <polygon points="0 0,0 100,80 100,100 80,100 0" style="fill:#666;" />
-      </svg>
+      <div class="shadowboxleft-innerbox">
+        <h1 style="font-size:2.8vw;color:#eee">"Something something, nice to meet you" - Anonymous</h1>
+        <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
+        <p style="margin-top:3%;color:#eee;font-size:2vw;text-align: right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet autem consequatur delectus dolorem eos facere in inventore n</p>
+      </div>
+    </div>
+
+    <div class="shadowboxleft-bgunder">
+      <div class="sh2-left"></div>
+      <div class="sh1-left">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,0 100,100 0" style="fill:#666;" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="shadowboxleft-left">
+      <div class="sh6">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 100,100 0,100 100" style="fill:#333;" />
+        </svg>
+      </div>
+      <div class="sh7"></div>
     </div>
     <div class="shadowboxleft-bottom">
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0 100,72 100,83.5 0,0 0" style="fill:#0c0c0c;" />
-      </svg>
-
-      <!--<polygon points="16.5 0,28 100,100 100,100 0,0 0" style="fill:#0c0c0c;" />-->
-
+      <div class="sh3-left">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0 0,0 100,100 0" style="fill:#111;" />
+        </svg>
+      </div>
+      <div class="sh4-left">
+        <div class="sh5-left">
+          <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="0 0,0 100,100 0" style="fill:#333;" />
+          </svg>
+        </div>
+      </div>
     </div>
 
   </div>
+</div>
 
-  <!--<div id='stars2'></div>-->
-</div>
-<div class="col-lg-12">
-</div>
