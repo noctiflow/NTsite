@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portfolio</title>
+    <title><%= t('header_25') %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= stylesheet_link_tag "portfolio" %>
-    <%= favicon_link_tag '', type: 'image/png' %>
+    <%= favicon_link_tag 'nf.ico', type: 'image/png' %>
+    <meta name="keywords" content="HTML, CSS, Ruby, Rails, Javascript, WordPress, Web Development, Web Design, Web Application, Vancouver, Richmond, Burnaby, Coding">
+    <meta name="description" content="Noctiflow is a web development & design company based in Vancouver, BC. We are focused on modernized, sleek design with ease of accessibility and functionality in mind. Get in touch with us today to get a free quote on your concept.">
+
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -24,8 +27,8 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <a class="navbar-brand" href="/">
-          <img class="img-responsive" src="<%= asset_path( 'portfolio/noctiflow_text_512-g.png' ) %>" width="200vw">
+        <a class="navbar-brand" style="padding-top:12px;" href="/">
+          <img class="img-responsive animated" style="opacity:0;" src="<%= asset_path( 'portfolio/noctiflow_text_512-g.png' ) %>" width="180vw">
         </a>
 
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -40,12 +43,23 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav pull-right">
 
-            <li class="faa-pulse animated-hover faa-fast"><a href="/#about_us">About Us</a></li>
-            <li class="faa-pulse animated-hover faa-fast"><a href="/#services">Services</a></li>
-            <li class="faa-pulse animated-hover faa-fast"><a href="/#portfolio">Portfolio</a></li>
-            <li class="faa-pulse animated-hover faa-fast"><a href="/#team">Team</a></li>
-            <li class="faa-pulse animated-hover faa-fast"><a href="/#pricing">Pricing</a></li>
-            <li class="faa-pulse animated-hover faa-fast"><a href="/#contact_us">Contact Us</a></li>
+            <% if I18n.locale == I18n.default_locale %>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('about'), '/#about_us' %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('services'), '/#services' %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('portfolio'), '/#portfolio' %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('team'), '/#team' %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('pricing'), '/#pricing' %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('contact_us'), '/#contact_us' %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to '中文', url_for( :locale => 'zh_TW' )  %></li>
+            <% else %>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('about'), root_path(:locale => 'zh_TW', anchor: "about_us") %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('services'), root_path(:locale => 'zh_TW', anchor: "services") %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('portfolio'), root_path(:locale => 'zh_TW', anchor: "portfolio") %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('team'), root_path(:locale => 'zh_TW' , anchor: "team") %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('pricing'), root_path(:locale => 'zh_TW' , anchor: "pricing") %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('contact_us'), root_path(:locale => 'zh_TW' , anchor: "contact_us") %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to "English", { :locale=>'en' } %></li>
+            <%end%>
 
         </ul>
 

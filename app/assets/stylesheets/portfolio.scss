@@ -26,11 +26,17 @@ html, body {
 }
 
 .invsbtn{
-  background-color: rgba(0,0,0,0) !important;
+  margin-top: 2%;
+  background-color: rgba(238,232,170, 0.8) !important;
 }
 
 .invsbtn:hover{
-  color: palegoldenrod;
+  color: black;
+  text-shadow: 2px 2px 4px white;
+}
+
+.btn, .btn-large {
+  border-radius: 999px !important;
 }
 
 .xbtn {

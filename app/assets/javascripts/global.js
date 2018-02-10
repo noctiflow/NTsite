@@ -50,13 +50,13 @@ $(document).ready(function() {
     });
   }
 
-  $('.footer2').on('mouseenter',function(event){
-    $('.footer').css('visibility','visible')
-    $('.footer2').css('visibility','hidden')
-  })
-  $('.footer').on('mouseleave',function(event){
-    $('.footer2').css('visibility','visible')
-    $('.footer').css('visibility','hidden')
-  })
+  // $('.footer2').on('mouseenter',function(event){
+  //   $('.footer').css('visibility','visible')
+  //   $('.footer2').css('visibility','hidden')
+  // })
+  // $('.footer').on('mouseleave',function(event){
+  //   $('.footer2').css('visibility','visible')
+  //   $('.footer').css('visibility','hidden')
+  // })
 
 });
