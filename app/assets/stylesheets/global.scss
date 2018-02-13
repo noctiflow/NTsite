@@ -1,4 +1,7 @@
 //keep all global styling in this file
+*{
+  font-family:"Arial";
+}
 .s {
   width: 100%;
   height: 25vw;
@@ -38,6 +41,9 @@
   display: flex;
   justify-content: center;
   padding-top: 5vw;
+  @include mobile{
+    margin:5% 0% 5% 0%;
+  }
 }
 .ctnbox{
   z-index: 1200;
@@ -97,7 +103,7 @@
   background-color: #666;
   margin-left:10%;
   margin-top:0.5%;
-  padding:5%;
+  padding:5% 5% 2% 5%;
   @include mobile{
     width:100%;
     margin-left:0;
@@ -395,40 +401,27 @@
     margin-right: 15%;
   }
 }
-.shadowboxright-innerbox{
+.innerbox{
   left:0;
-  margin-top:13%;
-  margin-left:5%;
-  width:90%;
+  margin-top:8%;
+  margin-left:0%;
+  width:100%;
   height:55%;
   z-index: 10;
-  border:thin #aaa solid;
-  background-color: #888;
+  border:thin #222 solid;
+  background-color: #333;
   border-radius: 1%;
-  //padding:2% 5% 1.5% 3%;
-  box-shadow: 2px 4px 5px #333;
   @include mobile{
     width:80%;
     margin-left:10%;
     margin-top:15%;
   }
 }
+.shadowboxright-innerbox{
+  box-shadow: 3px 5px 5px #222;
+}
 .shadowboxleft-innerbox{
-  left:0;
-  margin-top:13%;
-  margin-left:5%;
-  width:90%;
-  min-height:55%;
-  z-index: 10;
-  border:thin #aaa solid;
-  background-color: #888;
-  border-radius: 1%;
   box-shadow: -2px 4px 5px #333;
-  @include mobile{
-    width: 80%;
-    margin-left: 10%;
-    margin-top:15%;
-  }
 }
 .shadowboxright-header{
   z-index: 999;
