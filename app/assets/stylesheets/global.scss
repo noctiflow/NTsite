@@ -1,7 +1,7 @@
 //keep all global styling in this file
 .s {
   width: 100%;
-  height: 45vw;
+  height: 25vw;
   position: relative;
   display: inline-block;
   @include mobile{
@@ -16,6 +16,28 @@
   @include desktopxl{
     margin-top: 10%;
   }
+}
+.nfimgleft {
+  width:20vw;
+  float:left;
+  position:relative;
+  left:36.2%;
+}
+.nfimgright{
+  width:20vw;
+  float:right;
+  position:relative;
+  left:-36.2%;
+}
+.nfimggold{
+  width:25.8vw;
+  position: relative;
+  left:17%;
+}
+.nftext {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vw;
 }
 .ctnbox{
   z-index: 1200;
