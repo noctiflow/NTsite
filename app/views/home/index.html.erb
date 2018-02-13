@@ -8,7 +8,7 @@
   <div id="outro" class="animated fadeOut"><%= image_tag "general/left.png", :class => "img-responsive animated fadeInLeft nfimgleft" %></div>
   <div id="outro" class="animated fadeOut"><%= image_tag "general/right.png", :class => "img-responsive animated fadeInRight nfimgright" %></div>
   <div id="goldfade" class="animated fadeIn nfgold"><%= image_tag "general/gold.png", :class => "img-responsive nfimggold" %></div>
-  <div id="nf" class="animated fadeIn nftext"><%=image_tag "portfolio/noctiflow_text_512-g.png"%></div>
+  <div id="nf" class="animated fadeIn nftext"><%=image_tag "portfolio/noctiflow_text_512-g.png", :class => "img-responsive nfimgtext"%></div>
 </div>
 
 <div id="about_us" class="ctnbox">
@@ -28,13 +28,13 @@
     </div>
 
     <div class="shadowbox-bg">
-      <div class="shadowboxright-innerbox">
+      <div class="shadowboxright-innerbox innerbox">
 
         <ul class="filtermenu">
-          <li class="bubbly-button faa-float animated-hover" data-filter="mission"><%= t('header_1') %></li>
-          <li class="bubbly-button faa-float animated-hover" data-filter="concept"><%= t('header_2') %></li>
-          <li class="bubbly-button faa-float animated-hover" data-filter="history"><%= t('header_3') %></li>
-          <li class="bubbly-button faa-float animated-hover" data-filter="history"><%= t('header_4') %></li>
+          <li class="bubbly-button faa-float animated-hover bt1" data-filter="mission"><%= t('header_1') %></li>
+          <li class="bubbly-button faa-float animated-hover bt2" data-filter="concept"><%= t('header_2') %></li>
+          <li class="bubbly-button faa-float animated-hover bt3" data-filter="history"><%= t('header_3') %></li>
+          <li class="bubbly-button faa-float animated-hover bt4" data-filter="history"><%= t('header_4') %></li>
         </ul>
         <div class="container">
           <div class="post history">
@@ -142,7 +142,7 @@
       </svg>
     </div>
     <div class="shadowbox-bg">
-      <div class="shadowboxleft-innerbox">
+      <div class="shadowboxleft-innerbox innerbox">
         <div class="container">
           <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:13%; padding-bottom: 3%;"></div>
           <div class="col-md-4">
@@ -238,7 +238,7 @@
     </div>
 
     <div class="shadowbox-bg">
-        <div style="width: 100%; margin-left: 0%; height: 50%; margin-top: 10%;" class="shadowboxright-innerbox hidebox">
+        <div style="width: 100%; margin-left: 0%; height: 50%; margin-top: 10%;" class="shadowboxright-innerbox innerbox hidebox">
 
           <div style="box-shadow: 4px 8px 10px #333;" id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -315,7 +315,7 @@
     </div>
 
     <div class="shadowbox-bg">
-      <div class="shadowboxleft-innerbox">
+      <div class="shadowboxleft-innerbox innerbox">
         <div class="container">
           <div style="margin-top: 10%;" class="jumbotron-fluid">
             <div class="col-lg-4">
@@ -436,7 +436,7 @@
     </div>
 
     <div class="shadowbox-bg">
-      <div class="shadowboxright-innerbox">
+      <div class="shadowboxright-innerbox innerbox">
         <h1 style="font-size:2.8vw;color:#eee; text-align: center; text-shadow: 2px 2px black;"><%= t('header_20') %></h1>
         <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
           <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center"><%= t('text_31') %></p>
@@ -501,7 +501,7 @@
     </div>
 
     <div class="shadowbox-bg">
-      <div class="shadowboxleft-innerbox">
+      <div class="shadowboxleft-innerbox innerbox">
         <h1 style="font-size:2.8vw;color:#eee">"Something something, nice to meet you" - Anonymous</h1>
         <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
         <p style="margin-top:3%;color:#eee;font-size:2vw;text-align: right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet autem consequatur delectus dolorem eos facere in inventore n</p>
