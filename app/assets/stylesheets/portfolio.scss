@@ -1,10 +1,22 @@
+@import "mediaquery-mixins";
 html, body {
   overflow: hidden;
 }
 
 .carousel-item {
   opacity: 0.8 !important;
-  min-width: 40vw !important;
+  @include desktopxl {
+    min-width: 40vw !important;
+  }
+  @include desktop{
+    min-width: 50vw !important;
+  }
+  @include tablet{
+    min-width: 70vw !important;
+  }
+  @include mobile{
+    min-width: 90vw !important;
+  }
 }
 
 .modal-content {
