@@ -97,6 +97,8 @@ zh_TW:
   text_32: "EMAIL"
   text_33: "Backup"
   text_34: "關於我們的任何服務都可與我們聯絡"
+  text_35: "您的訊息以成功送出，我們會儘快與您聯絡，謝謝。"
+  text_36: "很抱歉您的訊息無法送出，請利用其他方式與我們聯絡。"
 
 
   send_btn: "Send Message"
