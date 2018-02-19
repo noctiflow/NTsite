@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.post').hide();
-  $('.mission').show();
+  $('.history').show();
   $('.filtermenu > li').on('click',function(){
     console.log($(this).html());
     if($(this).hasClass('bt1') && !($(this).hasClass('filterbtn'))){

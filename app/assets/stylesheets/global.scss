@@ -1,6 +1,15 @@
 //keep all global styling in this file
 *{
-  font-family:"Arial";
+  font-family:"Helvetica";
+  letter-spacing: 1.5px !important;
+}
+p{
+  font-weight: 100;
+  font-family:"Helvetica Neue";
+  font-size: 30px;
+}
+body{
+  color: #eee;
 }
 .s {
   width: 100%;
@@ -100,7 +109,7 @@
 .shadowbox-bg{
   position: relative;
   width:80%;
-  background-color: #666;
+  background-color: #333;
   margin-left:10%;
   margin-top:0.5%;
   padding:5% 5% 2% 5%;
@@ -124,7 +133,7 @@
 }
 .sh2{
   position: absolute;
-  background-color: #666;
+  background-color: #333;
   height:100%;
   width:80.2%;
   display: inline-block;
@@ -151,7 +160,7 @@
 }
 .sh2-left{
   position: absolute;
-  background-color: #666;
+  background-color: #333;
   height:100%;
   width:80.2%;
   display: inline-block;
@@ -293,7 +302,7 @@
   margin-top:-1px;
   width:100%;
   height:auto;
-  background-color: #333;
+  background-color: #444;
   position: absolute;
   top:0;
   bottom:0;
@@ -409,8 +418,8 @@
   height:55%;
   z-index: 10;
   border:thin #222 solid;
-  background-color: #333;
-  border-radius: 1%;
+  background-color: rgba(19, 18, 21, 0.94);
+  border-radius: 2px;
   @include mobile{
     width:80%;
     margin-left:10%;
