@@ -5,29 +5,45 @@ img {
 
 .filtermenu {
 	width:100%;
-	margin-top:20px;
 	text-align: center;
+    padding-top:7px;
+  padding-bottom:5px;
     padding-left: 0;
+    background: rgba(0,0,0,0.5);
 
 	 li {
 
 		padding: 4px 15px;
 		display: inline-block;
-		border-radius: 999px;
+		border-radius: 2px;
 		cursor: pointer;
-    background:palegoldenrod;
-    color: black;
+        color: white;
 
 
 		 &:focus {
 
 		 }
+
 	}
 }
 
+.bt2{&:hover{
+  color: rgba(178, 58, 110, 0.94);
+}}
+.bt1{&:hover{
+  color: rgba(178, 67, 81, 0.94);
+}}
+.bt3{&:hover{
+  color: rgba(178, 75, 65, 0.94);
+}}
+.bt4{&:hover{
+  color: rgba(178, 96, 62, 0.94);
+}}
+
 .filterbtn {
-  background:black !important;
-  color: palegoldenrod !important;
+  //background:black !important;
+  //color: palegoldenrod !important;
+  border-bottom: thin white solid;
 }
 
 
