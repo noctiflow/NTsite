@@ -1,31 +1,47 @@
-<div style="padding-top: 2%;" class="container-fluid">
+<div class="section">
 
-  <div class="col-lg-12">
-    <div class="carousel">
-       <a class="carousel-item responsive-img modal-trigger" href="#modal1"><img class="mhover" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>"></a>
-       <a class="carousel-item responsive-img modal-trigger" href="#modal2"><img class="mhover" src="<%= asset_path( 'portfolio/demo1.jpg' ) %>"></a>
-       <a class="carousel-item responsive-img modal-trigger" href="#modal3"><img class="mhover" src="<%= asset_path( 'portfolio/demo2.jpg' ) %>"></a>
-       <a class="carousel-item responsive-img modal-trigger" href="#modal4"><img class="mhover" src="<%= asset_path( 'portfolio/demo3.jpg' ) %>"></a>
-       <a class="carousel-item responsive-img modal-trigger" href="#modal5"><img class="mhover" src="<%= asset_path( 'portfolio/aaplus_full.jpg' ) %>"></a>
-       <a class="carousel-item responsive-img modal-trigger" href="#modal6"><img class="mhover" src="<%= asset_path( 'portfolio/aroma_full.jpg' ) %>"></a>
+<div style="padding-top: 20vh;" class="row">
+  <div class="col s2">
+
+  </div>
+  <div class="col s8">
+    <!-- <div class="carousel">
+       <a class="carousel-item modal-trigger" href="#modal1"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>"></a>
+       <a class="carousel-item modal-trigger" href="#modal2"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/demo1.jpg' ) %>"></a>
+       <a class="carousel-item modal-trigger" href="#modal3"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/demo2.jpg' ) %>"></a>
+       <a class="carousel-item modal-trigger" href="#modal4"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/demo3.jpg' ) %>"></a>
+       <a class="carousel-item modal-trigger" href="#modal5"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/aaplus_full.jpg' ) %>"></a>
+       <a class="carousel-item modal-trigger" href="#modal6"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/aroma_full.jpg' ) %>"></a>
+    </div> -->
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
+  </div>
 
-<div style="padding-top: 30vh;" class="container">
-  <div class="col-lg-12">
-    <div class="col-md-1">
-    </div>
-    <center>
-      <div class="col-md-12">
-        <img style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/aromacoffee_logo.png' ) %>">
-        <img style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/sachielwater_logo.png' ) %>">
-        <img style="max-width: 200px;" src="<%= asset_path( 'portfolio/logos/aaplus_logo.png' ) %>">
+
+<div class="row">
+  <div class="col s4">
+  </div>
+
+      <div class="col s8">
+        <img class="responsive-img" style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/aromacoffee_logo.png' ) %>">
+        <img class="responsive-img" style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/sachielwater_logo.png' ) %>">
+        <img class="responsive-img" style="max-width: 200px;" src="<%= asset_path( 'portfolio/logos/aaplus_logo.png' ) %>">
       </div>
-    </center>
-    <div class="col-md-1">
-    </div>
-  </div>
+
 </div>
 
 <!--  ============================ Modal Structure ================================================  -->
@@ -96,3 +112,5 @@
      </center>
    </div>
  </div>
+
+ <!-- ====================== Collapsible HTML Structure====================== -->
