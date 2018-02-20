@@ -1,9 +1,18 @@
 //keep all global styling in this file
 *{
   font-family:"Helvetica";
-  letter-spacing: 1.5px !important;
+}
+.carousel{
+  height: 30vw !important;
+  @include tablet{
+    height:40vw !important;
+  }
+  @include mobile{
+    height:50vw !important;
+  }
 }
 p{
+  letter-spacing: 1.5px !important;
   font-weight: 100;
   font-family:"Helvetica Neue";
   font-size: 25px;
@@ -14,11 +23,15 @@ p{
 .filtermenu > li{
   font-weight: 200;
   font-family:"Helvetica Neue";
-  font-size: 18px;
-  width: 20% !important;
+  font-size: 20px;
+  letter-spacing:2px !important;
   @include tablet{
     font-size: 16px;
   }
+}
+.b > li{
+  width: 20% !important;
+  cursor: pointer;
   @include mobile{
     width:50% !important;
     padding-bottom:5px;
@@ -557,7 +570,6 @@ body{
 .hidebox {
   background-color: rgba(0,0,0,0);
   border: none;
-  box-shadow: none;
 }
 
 .round-button-circle {
@@ -745,6 +757,10 @@ li.active a {
     display: inline-block;
     letter-spacing: 2px;
     width: 100%;
+    text-align: center;
+    @include desktopxl{
+      text-align: left;
+    }
 }
 .team-title h5 {
     margin-bottom: 0px;
@@ -821,4 +837,8 @@ li.active a {
 }
 .post-txt > center {
   padding-top:15px;
+}
+.center-block{
+  display:flex;
+  justify-content: center;
 }
