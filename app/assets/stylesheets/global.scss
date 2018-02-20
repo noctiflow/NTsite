@@ -6,7 +6,23 @@
 p{
   font-weight: 100;
   font-family:"Helvetica Neue";
-  font-size: 30px;
+  font-size: 25px;
+  margin-top:3%;
+  color:white;
+  text-align: center;
+}
+.filtermenu > li{
+  font-weight: 200;
+  font-family:"Helvetica Neue";
+  font-size: 18px;
+  width: 20% !important;
+  @include tablet{
+    font-size: 16px;
+  }
+  @include mobile{
+    width:50% !important;
+    padding-bottom:5px;
+  }
 }
 body{
   color: #eee;
@@ -430,7 +446,7 @@ body{
   box-shadow: 3px 5px 5px #222;
 }
 .shadowboxleft-innerbox{
-  box-shadow: -2px 4px 5px #333;
+  box-shadow: -3px 5px 5px #222;
 }
 .shadowboxright-header{
   z-index: 999;
@@ -802,4 +818,7 @@ li.active a {
     -webkit-transition: all 0.3s 0.2s;
     transition: all 0.3s 0.2s;
     font-size: 35px;
+}
+.post-txt > center {
+  padding-top:15px;
 }

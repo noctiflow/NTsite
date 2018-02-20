@@ -31,56 +31,39 @@
       <div class="shadowboxright-innerbox innerbox">
 
         <ul class="filtermenu">
-          <li class="bt2" data-filter="history"><%= t('header_3') %></li>
+          <li class="bt2 filterbtn" data-filter="history"><%= t('header_3') %></li>
           <li class="bt1" data-filter="mission"><%= t('header_1') %></li>
           <li class="bt3" data-filter="concept"><%= t('header_2') %></li>
           <li class="bt4" data-filter="question"><%= t('header_4') %></li>
         </ul>
         <div class="container" style="padding-bottom: 15px;">
           <div class="post history">
-            <div class="post-title">
-              <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_5') %></h1>
-              <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
-            </div>
             <div class="post-txt">
-              <p style="margin-top:3%;color:white;text-align: left;"><%= t('text_1') %></p>
+              <p><%= t('text_1') %></p>
               <center><span style="color: white;" class="material-icons faa-wrench animated faa-slow"><i class="fa fa-book" aria-hidden="true"></i></span></center>
             </div>
           </div>
           <!-- /post -->
           <div class="post concept">
-            <div class="post-title">
-              <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_6') %></h1>
-              <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
-            </div>
             <div class="post-txt">
-              <p style="margin-top:3%;color:white;text-align: left;"><%= t('text_2') %></p>
-
-              <p style="margin-top:3%;color:white;font-size:1.0vw;text-align: left;"><%= t('text_3') %></p>
+              <p><%= t('text_2') %></p>
+              <p><%= t('text_3') %></p>
               <center><i style="color: white;" class="material-icons faa-spin animated">settings</i></center>
             </div>
           </div>
           <!-- /post -->
           <div class="post mission">
-            <div class="post-title">
-              <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_7') %></h1>
-              <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
-            </div>
             <div class="post-txt">
-              <p style="margin-top:3%;color:white;text-align: left;"><%= t('text_4') %><center style="color:white;font-size:1.0vw;"><%= t('text_5') %></center></p>
-              <p style="margin-top:3%;color:white;text-align: left;"><%= t('text_6') %></p>
+              <p><%= t('text_4') %><center style="color:white;font-size:1.0vw;"><%= t('text_5') %></center></p>
+              <p><%= t('text_6') %></p>
               <center><i style="color: white;" class=" material-icons faa-bounce animated">thumb_up</i></center>
             </div>
           </div>
           <!-- /post -->
           <div class="post question">
-            <div class="post-title">
-              <h1 style="font-size:1.8vw;color:white; text-align: center; text-shadow: 2px 2px black;"><%= t('header_8') %></h1>
-              <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:4%"></div>
-            </div>
             <div class="post-txt">
-              <p style="margin-top:3%;color:white;text-align: center;"><%= t('text_7') %></p>
-              <p style="margin-top:3%;color:white;text-align: center;"><%= t('text_8') %></p>
+              <p><%= t('text_7') %></p>
+              <p><%= t('text_8') %></p>
               <center><a style="margin-top: 5%;" title="Contact Us" href="#contact_us" class="faa-shake animated"><i class="iconcss material-icons">mail</i></a></center>
             </div>
           </div>
@@ -138,15 +121,13 @@
           </linearGradient>
         </defs>
         <polygon points="10 100,100 100,100 0,0 0" style="fill:url(#grad2);" />
-        <text fill="#ffffff" transform="scale(0.4,1.5)" font-size="30" x="133" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_13') %></text>
+        <text fill="#ffffff" transform="scale(0.475,1.5)" font-size="30" x="110" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_13') %></text>
       </svg>
     </div>
     <div class="shadowbox-bg">
       <div class="shadowboxleft-innerbox innerbox">
         <div class="container">
-          <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:13%; padding-bottom: 3%;"></div>
-          <div class="col-md-4">
-
+          <div class="col-md-4 col-sm-12 col-xs-12">
             <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: left; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated">build</i><%= t('header_10') %></p>
             <center>
               <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_9') %></div>
@@ -158,7 +139,7 @@
               <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_15') %></div>
             </center>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-12 col-xs-12">
             <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated"><i class="material-icons">camera_enhance</i></i><%= t('header_11') %></p>
             <center>
               <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_16') %></div>
@@ -168,7 +149,7 @@
               <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_20') %></div>
             </center>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-12 col-xs-12">
             <p style="margin-top:3%;color:#eee;font-size:1.3vw;text-align: center; text-shadow: 2px 2px black;"> <i style="color:palegoldenrod;font-size:1.5vw; border: 2px solid palegoldenrod; border-radius: 999px; padding: 4px;" class="material-icons faa-pulse animated">lightbulb_outline</i><%= t('header_12') %></p>
             <center>
               <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_21') %></div>
@@ -177,9 +158,6 @@
               <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_24') %></div>
               <div style="background-color: black; color: palegoldenrod; margin: 8px;" class="chipicon faa-float animated-hover"><%= t('text_25') %></div>
             </center>
-          </div>
-          <div style="padding-top: 2%;" class="col-md-12">
-            <div style="border-top:thin #ccc solid;width:50%;margin-left: 25%;margin-top:2%;margin-bottom:4%;"></div>
           </div>
         </div>
       </div>
@@ -197,7 +175,7 @@
     <div class="shadowboxleft-left">
       <div class="sh6">
         <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0 100,100 0,100 100" style="fill:#333;" />
+          <polygon points="0 100,100 0,100 100" style="fill:#444;" />
         </svg>
       </div>
       <div class="sh7"></div>
@@ -211,7 +189,7 @@
       <div class="sh4-left">
         <div class="sh5-left">
           <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon points="0 0,0 100,100 0" style="fill:#333;" />
+            <polygon points="0 0,0 100,100 0" style="fill:#444;" />
           </svg>
         </div>
       </div>
@@ -233,7 +211,7 @@
           </linearGradient>
         </defs>
         <polygon points="0 100,90 100,100 0,0 0" style="fill:url(#grad3);" />
-        <text fill="#ffffff" transform="scale(0.4,1.5)" font-size="30" x="120" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_23') %></text>
+        <text fill="#ffffff" transform="scale(0.475,1.5)" font-size="30" x="100" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_23') %></text>
       </svg>
     </div>
 
@@ -263,7 +241,7 @@
     <div class="shadowboxright-bgunder">
       <div class="sh1">
         <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0 0,100 100,100 0" style="fill:#666;" />
+          <polygon points="0 0,100 100,100 0" style="fill:#333;" />
         </svg>
       </div>
       <div class="sh2">
@@ -273,7 +251,7 @@
     <div class="shadowboxright-right">
       <div class="sh6">
         <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0 0,0 100,100 100" style="fill:#333;" />
+          <polygon points="0 0,0 100,100 100" style="fill:#444;" />
         </svg>
       </div>
       <div class="sh7"></div>
@@ -287,7 +265,7 @@
       <div class="sh4">
         <div class="sh5">
           <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon points="0 0,100 100,100 0" style="fill:#333;" />
+            <polygon points="0 0,100 100,100 0" style="fill:#444;" />
           </svg>
         </div>
       </div>
@@ -310,7 +288,7 @@
           </linearGradient>
         </defs>
         <polygon points="10 100,100 100,100 0,0 0" style="fill:url(#grad2);" />
-        <text fill="#ffffff" transform="scale(0.4,1.5)" font-size="30" x="133" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_19') %></text>
+        <text fill="#ffffff" transform="scale(0.475,1.5)" font-size="30" x="110" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_19') %></text>
       </svg>
     </div>
 
@@ -388,7 +366,7 @@
       <div class="sh2-left"></div>
       <div class="sh1-left">
         <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0 0,0 100,100 0" style="fill:#666;" />
+          <polygon points="0 0,0 100,100 0" style="fill:#333;" />
         </svg>
       </div>
     </div>
@@ -396,7 +374,7 @@
     <div class="shadowboxleft-left">
       <div class="sh6">
         <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0 100,100 0,100 100" style="fill:#333;" />
+          <polygon points="0 100,100 0,100 100" style="fill:#444;" />
         </svg>
       </div>
       <div class="sh7"></div>
@@ -410,7 +388,7 @@
       <div class="sh4-left">
         <div class="sh5-left">
           <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon points="0 0,0 100,100 0" style="fill:#333;" />
+            <polygon points="0 0,0 100,100 0" style="fill:#444;" />
           </svg>
         </div>
       </div>
@@ -431,7 +409,7 @@
           </linearGradient>
         </defs>
         <polygon points="0 100,90 100,100 0,0 0" style="fill:url(#grad1);" />
-        <text fill="#ffffff" transform="scale(0.4,1.5)" font-size="30" x="120" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_22') %></text>
+        <text fill="#ffffff" transform="scale(0.475,1.5)" font-size="30" x="100" y="45" text-anchor="middle" alignment-baseline="central" ><%= t('header_22') %></text>
       </svg>
     </div>
 
@@ -450,7 +428,7 @@
     <div class="shadowboxright-bgunder">
       <div class="sh1">
         <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0 0,100 100,100 0" style="fill:#666;" />
+          <polygon points="0 0,100 100,100 0" style="fill:#333;" />
         </svg>
       </div>
       <div class="sh2">
@@ -460,7 +438,7 @@
     <div class="shadowboxright-right">
       <div class="sh6">
         <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0 0,0 100,100 100" style="fill:#333;" />
+          <polygon points="0 0,0 100,100 100" style="fill:#444;" />
         </svg>
       </div>
       <div class="sh7"></div>
@@ -474,7 +452,7 @@
       <div class="sh4">
         <div class="sh5">
           <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon points="0 0,100 100,100 0" style="fill:#333;" />
+            <polygon points="0 0,100 100,100 0" style="fill:#444;" />
           </svg>
         </div>
       </div>
@@ -496,7 +474,7 @@
           </linearGradient>
         </defs>
         <polygon points="10 100,100 100,100 0,0 0" style="fill:url(#grad2);" />
-        <text fill="#ffffff" transform="scale(0.4,1.5)" font-size="30" x="133" y="45" text-anchor="middle" alignment-baseline="central" >Contact Us</text>
+        <text fill="#ffffff" transform="scale(0.475,1.5)" font-size="30" x="110" y="45" text-anchor="middle" alignment-baseline="central" >Contact Us</text>
       </svg>
     </div>
 
@@ -515,7 +493,7 @@
       <div class="sh2-left"></div>
       <div class="sh1-left">
         <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0 0,0 100,100 0" style="fill:#666;" />
+          <polygon points="0 0,0 100,100 0" style="fill:#333;" />
         </svg>
       </div>
     </div>
@@ -523,7 +501,7 @@
     <div class="shadowboxleft-left">
       <div class="sh6">
         <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0 100,100 0,100 100" style="fill:#333;" />
+          <polygon points="0 100,100 0,100 100" style="fill:#444;" />
         </svg>
       </div>
       <div class="sh7"></div>
@@ -537,7 +515,7 @@
       <div class="sh4-left">
         <div class="sh5-left">
           <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon points="0 0,0 100,100 0" style="fill:#333;" />
+            <polygon points="0 0,0 100,100 0" style="fill:#444;" />
           </svg>
         </div>
       </div>
