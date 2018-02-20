@@ -10,7 +10,7 @@ def create
     flash.now[:notice] = "#{ t('text_35') }"
   else
     flash.now[:error] = "#{ t('text_36') }"
-    render :new
+    redirect_to root_path(anchor: 'contact_us')
   end
 end
 end
