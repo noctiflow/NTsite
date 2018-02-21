@@ -1,39 +1,29 @@
 @import "mediaquery-mixins";
 html, body {
   overflow: hidden;
+  font-family: "Helvetica" !important;
 }
 
-
-.modal-content {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-.modal .modal-content {
-  padding: 0px;
-}
-
-
-.modal {
-  //  box-shadow: 5px 10px grey;
-  //  border-radius: 35px;
-  background-color: rgba(0,0,0,0) !important;
-}
-
-.modal-footer{
-  // background-color: rgba(0,0,0,0) !important;
-}
 
 .invsbtn{
   margin-top: 2%;
-  background-color: rgba(238,232,170, 0.8) !important;
+  background-color: rgba(95,95,95, 0.8) !important;
+  font-size: 12px !important;
+  padding: none !important;
 }
 
 .invsbtn:hover{
   color: black;
   text-shadow: 2px 2px 4px white;
+
 }
 
 .btn, .btn-large {
   border-radius: 999px !important;
+
+  &:hover{
+    box-shadow: 3px 5px 5px grey !important;
+  }
 }
 
 .xbtn {
@@ -44,17 +34,41 @@ html, body {
   color: palegoldenrod;
 }
 
-.mhover:hover {
-    -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 2s infinite  alternate;
+//  ============= collapsible CSS ============================================
+
+.collapsible-header{
+  display: block !important;
+  background-color: rgba(19, 18, 21, 0.94) !important;
+  border-radius: 2px;
+  box-shadow: -3px 5px 5px #222;
+  border-bottom: none !important;
+  text-transform: uppercase !important;
 }
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(-20px); }
+
+.collapsible{
+  overflow-y: scroll !important;
+  max-height: 60vh;
+  padding: none;
+  border: none !important;
 }
-@keyframes mover {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(-20px); }
+
+.collapsible > li {
+  color: white;
+
+}
+
+.row .col {
+  border: none;
+}
+
+.collapsible-body{
+  border-bottom: none !important;
+  box-shadow: -3px 5px 5px #222;
+
+
+  img{
+    opacity: 0.8;
+    max-width: 40vw !important;
+
+  }
 }

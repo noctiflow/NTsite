@@ -1,73 +1,75 @@
-<div class="section">
+<!-- <div id="stars"></div> -->
 
-<div style="padding-top: 20vh;" class="row">
-  <div class="col s2">
+<div class="section">
+  <div style="padding-top: 10vh;" class="row">
+        <div class="col s12 center-align">
+          <img class="responsive-img" style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/aromacoffee_logo.png' ) %>">
+          <img class="responsive-img" style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/sachielwater_logo.png' ) %>">
+          <img class="responsive-img" style="max-width: 200px;" src="<%= asset_path( 'portfolio/logos/aaplus_logo.png' ) %>">
+        </div>
+  </div>
+<div style="opacity:0.9;" class="row">
+  <div class="col s1">
 
   </div>
-  <div class="col s8">
-    <!-- <div class="carousel">
-       <a class="carousel-item modal-trigger" href="#modal1"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>"></a>
-       <a class="carousel-item modal-trigger" href="#modal2"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/demo1.jpg' ) %>"></a>
-       <a class="carousel-item modal-trigger" href="#modal3"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/demo2.jpg' ) %>"></a>
-       <a class="carousel-item modal-trigger" href="#modal4"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/demo3.jpg' ) %>"></a>
-       <a class="carousel-item modal-trigger" href="#modal5"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/aaplus_full.jpg' ) %>"></a>
-       <a class="carousel-item modal-trigger" href="#modal6"><img class="mhover responsive-img" src="<%= asset_path( 'portfolio/aroma_full.jpg' ) %>"></a>
-    </div> -->
+  <div style="padding-top: 5vh;" class="col s10">
       <ul class="collapsible" data-collapsible="accordion">
         <li>
-          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-header"><%= t('header_26') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
+          <div class="collapsible-body center-align">
+          <img class="responsive-img" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>">
+          <div><a class="invsbtn waves-effect waves-light btn" href="http://sachielwaterinc.com/"><%= t('header_27') %></a></div>
+          </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-header"><%= t('header_31') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
+          <div class="collapsible-body center-align">
+          <img class="responsive-img" src="<%= asset_path( 'portfolio/aaplus_full.jpg' ) %>">
+          <div><a class="invsbtn waves-effect waves-light btn" href="http://www.aaplusrestaurant.com/"><%= t('header_27') %></a></div>
+          </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-header"><%= t('header_32') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
+          <div class="collapsible-body center-align">
+          <img class="responsive-img" src="<%= asset_path( 'portfolio/aroma_full.jpg' ) %>">
+          <div><a class="invsbtn waves-effect waves-light btn" href="http://aromacoffee.noctiflow.com/"><%= t('header_27') %></a></div>
+          </div>
         </li>
+        <li>
+          <div class="collapsible-header"><%= t('header_28') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
+          <div class="collapsible-body center-align">
+          <img class="responsive-img" src="<%= asset_path( 'portfolio/demo1.jpg' ) %>">
+          <div><a class="invsbtn waves-effect waves-light btn" href="http://demo1.noctiflow.com/"><%= t('header_27') %></a></div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><%= t('header_29') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
+          <div class="collapsible-body center-align">
+          <img class="responsive-img" src="<%= asset_path( 'portfolio/demo2.jpg' ) %>">
+          <div><a class="invsbtn waves-effect waves-light btn" href="http://demo2.noctiflow.com/"><%= t('header_27') %></a></div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><%= t('header_30') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
+          <div class="collapsible-body center-align">
+          <img class="responsive-img" src="<%= asset_path( 'portfolio/demo3' ) %>">
+          <div><a class="invsbtn waves-effect waves-light btn" href="http://demo3.noctiflow.com/"><%= t('header_27') %></a></div>
+          </div>
+        </li>
+
       </ul>
     </div>
   </div>
   </div>
 
+    <!-- <div id="stars2"></div> -->
 
-<div class="row">
-  <div class="col s4">
-  </div>
 
-      <div class="col s8">
-        <img class="responsive-img" style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/aromacoffee_logo.png' ) %>">
-        <img class="responsive-img" style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/sachielwater_logo.png' ) %>">
-        <img class="responsive-img" style="max-width: 200px;" src="<%= asset_path( 'portfolio/logos/aaplus_logo.png' ) %>">
-      </div>
 
-</div>
+
 
 <!--  ============================ Modal Structure ================================================  -->
-   <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4 style="color: white;"><%= t('header_26') %>
-      <a class="xbtn pull-right waves-effect waves-light modal-action modal-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
-      </h4>
-      <img class="responsive-img" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>">
-      <center>
-        <a class="invsbtn waves-effect waves-light btn" href="http://sachielwaterinc.com/"><%= t('header_27') %></a>
-      </center>
-    </div>
-  </div>
 
-   <div id="modal2" class="modal">
-    <div class="modal-content">
-      <h4 style="color: white;"><%= t('header_28') %>
-      <a class="xbtn pull-right waves-effect waves-light modal-action modal-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></h4>
-      <img class="responsive-img" src="<%= asset_path( 'portfolio/demo1.jpg' ) %>">
-      <center>
-        <a class="invsbtn waves-effect waves-light btn" href="http://demo1.noctiflow.com/"><%= t('header_27') %></a>
-      </center>
-    </div>
-
-  </div>
 
    <div id="modal3" class="modal">
     <div class="modal-content">
@@ -90,27 +92,3 @@
       </center>
     </div>
   </div>
-
-  <div id="modal5" class="modal">
-   <div class="modal-content">
-     <h4 style="color: white;"><%= t('header_31') %>
-     <a class="xbtn pull-right waves-effect waves-light modal-action modal-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></h4>
-     <img class="responsive-img" src="<%= asset_path( 'portfolio/aaplus_full.jpg' ) %>">
-   </div>
-   <center>
-     <a class="invsbtn waves-effect waves-light btn" href="http://www.aaplusrestaurant.com/"><%= t('header_27') %></a>
-   </center>
- </div>
-
-  <div id="modal6" class="modal">
-   <div class="modal-content">
-     <h4 style="color: white;"><%= t('header_32') %>
-     <a class="xbtn pull-right waves-effect waves-light modal-action modal-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></h4>
-     <img class="responsive-img" src="<%= asset_path( 'portfolio/aroma_full.jpg' ) %>">
-     <center>
-       <a class="invsbtn waves-effect waves-light btn" href="http://aromacoffee.noctiflow.com/"><%= t('header_27') %></a>
-     </center>
-   </div>
- </div>
-
- <!-- ====================== Collapsible HTML Structure====================== -->
