@@ -1,6 +1,6 @@
 //keep all global styling in this file
 *{
-  font-family:"Helvetica";
+  font-family:"helvlightregular",Arial,sans-serif;
 }
 .carousel{
   height: 30vw !important;
@@ -14,7 +14,7 @@
 p{
   letter-spacing: 1.5px !important;
   font-weight: 100;
-  font-family:"Helvetica Neue";
+  font-family:"helvlightregular",Arial,sans-serif;;
   margin-top:3%;
   color:white;
   text-align: center;
@@ -33,7 +33,7 @@ p{
 }
 .filtermenu > li{
   font-weight: 200;
-  font-family:"Helvetica Neue";
+  font-family:"helvlightregular",Arial,sans-serif;
   font-size: 20px;
   letter-spacing:2px !important;
   @include tablet{
@@ -379,6 +379,7 @@ body{
   right:0;
   width:7vw;
   height:100%;
+  z-index: 2;
   @include desktop{
     width:8vw;
   }
@@ -395,6 +396,7 @@ body{
   left:0;
   width:7vw;
   height:100%;
+  z-index:2;
   @include desktop{
     width:8vw;
   }
