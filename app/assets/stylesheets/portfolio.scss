@@ -1,7 +1,7 @@
 @import "mediaquery-mixins";
 html, body {
   // overflow: hidden;
-  font-family: "Helvetica" !important;
+  font-family: "helvlightregular", Arial, sans-serif !important;
 }
 
 
@@ -43,12 +43,12 @@ html, body {
   @include mobile{   font-size: 12vw;}
 }
 .portfolio-header{
-  font-family:Futura;
+  font-family:'futuramedium', Arial,sans-serif;
   padding-top: 10vw;
   @include mobile{padding-top:20vw;}
 }
 .portfolio-x{
-  font-family: "Gill Sans";
+  font-family: "helvlightregular",Arial,sans-serif;
   font-weight:100;
   @include mobile{
     padding: 15px 0px 15px 0px;
