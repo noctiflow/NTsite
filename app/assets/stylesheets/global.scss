@@ -11,6 +11,10 @@
     height:50vw !important;
   }
 }
+.col-md-4, .col-lg-4{
+  @include desktop{  width:33.25%;  }
+  @include desktopxl{width:33.25%;  }
+}
 p{
   letter-spacing: 1.5px !important;
   font-weight: 100;
