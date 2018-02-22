@@ -684,6 +684,12 @@ body{
 
 .navbar .navbar-collapse {
   text-align: center;
+  @media (max-width: 767px){
+    padding-right: 40vw;
+  }
+  @media (min-width: 768px){
+    padding-right: 10px;
+  }
 }
 
 .navbar-nav > li  {
