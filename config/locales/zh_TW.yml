@@ -45,7 +45,7 @@ zh_TW:
   header_15: "創辦人 & 網頁開發者"
   header_16: "RICHARD WANG"
   header_17: "NIC TAMURA"
-  header_18: "設計師 & 網頁開發者"
+  header_18: "技術顧問"
   header_19: "團隊"
   header_20: "免費估價"
   header_21: "馬上聯絡我們"
@@ -60,6 +60,9 @@ zh_TW:
   header_30: "Noctiflow 自行車店 - 範例"
   header_31: "好好味 百搭魚湯米線"
   header_32: "Aroma Coffee Vancouver"
+  header_33: "聯繫我們！"
+  header_34: "聯繫方式"
+  header_35: "訪問網站"
 
 
 
@@ -99,13 +102,23 @@ zh_TW:
   text_34: "關於我們的任何服務都可與我們聯絡"
   text_35: "您的訊息以成功送出，我們會儘快與您聯絡，謝謝。"
   text_36: "很抱歉您的訊息無法送出，請利用其他方式與我們聯絡。"
+  text_37: "姓名"
+  text_38: "訊息內容"
+  text_39: "加拿大天然泉水，供應在地與全球服務"
+  text_40: "一月 2018"
+  text_41: "魚湯米線餐廳"
+  text_42: "5207 Victoria Dr, Vancouver, BC V5P 3V4"
+  text_43: "九月 2017"
+  text_44: "社區裡最好的咖啡店"
+  text_45: "十月 2017"
+  text_46: "WordPress 樣本網站"
 
 
-  send_btn: "Send Message"
-  close_btn: "Close Project"
+  send_btn: "發送訊息"
+  close_btn: "關起"
 
 
 
   errors:
     messages:
-      blank: "Please fill in the missing fields."
+      blank: "請填寫空格"

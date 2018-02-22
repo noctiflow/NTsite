@@ -45,7 +45,7 @@ en:
   header_15: "Co-Founder & Developer"
   header_16: "RICHARD WANG"
   header_17: "NIC TAMURA"
-  header_18: "Designer & Developer"
+  header_18: "Tech Consultant"
   header_19: "Team"
   header_20: "Free Quotes"
   header_21: "Contact Us Now"
@@ -62,6 +62,7 @@ en:
   header_32: "Aroma Coffee Vancouver"
   header_33: "GET IN TOUCH WITH US TODAY!"
   header_34: "Contact"
+  header_35: "Visit Site"
 
 
   text_1: "Noctiflow Technologies is a Vancouver based web design company that was founded in 2017."
@@ -102,7 +103,14 @@ en:
   text_36: "Cannot send message."
   text_37: "Name"
   text_38: "Message"
-
+  text_39: "Canada Natural Spring Water, Proudly Served Locally and Globally."
+  text_40: "January 2018"
+  text_41: "Fish Noodle Soup Restaurant"
+  text_42: "5207 Victoria Dr, Vancouver, BC V5P 3V4"
+  text_43: "September 2017"
+  text_44: "Best Coffee In The Neighbourhood"
+  text_45: "October 2017"
+  text_46: "WordPress Based Demo Site"
 
 
   send_btn: "Send Message"

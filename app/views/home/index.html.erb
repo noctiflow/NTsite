@@ -237,7 +237,11 @@
         </div>
         <br>
         <center>
+          <% if I18n.locale == I18n.default_locale %>
           <a href="/portfolio"><button type="button" class="btn btn-primary btn-lg btn3d"><%= t('header_27') %></button></a>
+          <% else %>
+          <a href="/zh_TW/portfolio"><button type="button" class="btn btn-primary btn-lg btn3d"><%= t('header_27') %></button></a>
+          <% end %>
         </center>
     </div>
 
@@ -481,7 +485,7 @@
     <div class="shadowbox-bg">
       <div class="shadowboxleft-innerbox innerbox">
           <ul class="filtermenu">
-            <li>Fill out the form to get in touch with us!</li>
+            <li><%= t('header_33') %></li>
           </ul>
 
             <%= render :partial => "contacts/new" %>
