@@ -33,6 +33,26 @@ html, body {
 .xbtn:hover {
   color: palegoldenrod;
 }
+.pfsplash{
+  width:100%;
+  text-align: center;
+
+  @include desktopxl{font-size: 6vw;}
+  @include desktop{  font-size: 7vw;}
+  @include tablet{   font-size: 10vw;}
+  @include mobile{   font-size: 12vw;}
+}
+.portfolio-header{
+  font-family:Futura;
+  padding-top: 15vw;
+}
+.portfolio-x{
+  font-family: "Gill Sans";
+  font-weight:100;
+  @include mobile{
+    padding: 15px 0px 15px 0px;
+  }
+}
 
 //  ============= collapsible CSS ============================================
 
