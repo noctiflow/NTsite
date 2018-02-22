@@ -45,6 +45,7 @@ html, body {
 .portfolio-header{
   font-family:Futura;
   padding-top: 10vw;
+  @include mobile{padding-top:20vw;}
 }
 .portfolio-x{
   font-family: "Gill Sans";
