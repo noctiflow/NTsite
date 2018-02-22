@@ -15,10 +15,21 @@ p{
   letter-spacing: 1.5px !important;
   font-weight: 100;
   font-family:"Helvetica Neue";
-  font-size: 25px;
   margin-top:3%;
   color:white;
   text-align: center;
+  @include desktopxl{
+    font-size:1.2vw;
+  }
+  @include desktop{
+    font-size:1.5vw;
+  }
+}
+.desk > p{
+  @include desktopxl{
+    padding: 0%;
+  }
+  padding: 0% 10% 0% 10%;
 }
 .filtermenu > li{
   font-weight: 200;
