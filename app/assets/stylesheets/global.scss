@@ -2,6 +2,9 @@
 *{
   font-family:"helvlightregular",Arial,sans-serif;
 }
+.btn {
+  text-shadow: 1px 1px 1px #000;
+}
 .carousel{
   height: 30vw !important;
   @include tablet{
