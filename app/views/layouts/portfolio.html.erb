@@ -8,8 +8,10 @@
     <%= javascript_include_tag 'application' %>
     <%= stylesheet_link_tag "portfolio" %>
     <%= favicon_link_tag 'nf.ico', type: 'image/png' %>
-    <meta name="keywords" content="HTML, CSS, Ruby, Rails, Javascript, WordPress, Web Development, Web Design, Web Application, Vancouver, Richmond, Burnaby, Coding">
-    <meta name="description" content="Noctiflow is a web development & design company based in Vancouver, BC. We are focused on modernized, sleek design with ease of accessibility and functionality in mind. Get in touch with us today to get a free quote on your concept.">
+    <meta name="keywords" lang="en" content="HTML, CSS, Ruby, Rails, Javascript, WordPress, Web Development, Web Design, Web Application, Vancouver, Richmond, Burnaby, Coding">
+    <meta name="keywords" lang="zh" content="HTML, CSS, Ruby, Rails, Javascript, WordPress, 网页开发, 网页设计,網頁應用程式, 溫哥華, 列治文, 本拿比, 编码">
+    <meta name="description" lang="en" content="Noctiflow Technologies is a web development & design company based in Vancouver, BC. We are focused on modernized, sleek design with ease of accessibility and functionality in mind. Get in touch with us today to get a free quote on your concept.">
+    <meta name="description" lang="zh" content="Noctiflow Technologies 是一间网页开发与网页设计的公司，位于温哥华，卑诗省。 我们专注与现代时尚的设计以及简易多功能的理念。 联系我们即可免费估价。">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -40,28 +42,26 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav pull-right">
-
             <% if I18n.locale == I18n.default_locale %>
               <li class="faa-pulse animated-hover faa-fast"><%= link_to t('back to homepage'), '/' %></li>
               <li class="faa-pulse animated-hover faa-fast"><%= link_to '中文', url_for( :locale => 'zh_TW' )  %></li>
             <% else %>
-              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('back to homepage'), root_path(:locale => 'zh_TW') %></li>
+              <li class="faa-pulse animated-hover faa-fast"><%= link_to t('回到首頁'), root_path(:locale => 'zh_TW') %></li>
               <li class="faa-pulse animated-hover faa-fast"><%= link_to "English", { :locale=>'en' } %></li>
             <%end%>
-
         </ul>
-
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
-     <!-- <div id='stars'></div> -->
+   <%= yield %>
 
-
-
-         <%= yield %>
-
+   <div style="padding-right: 2%;" class="footer right">
+      <span style="font-weight:bold;font-size:13px;letter-spacing: 1px; color: #d1c092; height: 30px;">©<%= Time.now.strftime("%Y") %> <%= t('header_36') %>
+      </span>
+   </div>
 
   </body>
+
   <!-- <div id='stars2'></div> -->
 </html>
