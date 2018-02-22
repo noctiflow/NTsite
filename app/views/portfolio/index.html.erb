@@ -1,87 +1,132 @@
-<div id="stars"></div>
+<div class="" style="width:100vw;height:100%;position:fixed;">
+  <div id="stars"></div>
+  <!-- <div id="stars2"></div> -->
+  <!--<div id="stars3"></div>-->
+</div>
 
 <div class="portfolio-header pfsplash">NOCTIFLOW</div>
-<div class="portfolio-x pfsplash">X</div>
+<div class="portfolio-x pfsplash faa-pulse animated faa-fast">X</div>
 <div class="section" style="padding-top:0">
-  <div class="row">
         <div class="col s12 center-align">
           <img class="responsive-img" style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/aromacoffee_logo.png' ) %>">
           <img class="responsive-img" style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/sachielwater_logo.png' ) %>">
           <img class="responsive-img" style="max-width: 200px;" src="<%= asset_path( 'portfolio/logos/aaplus_logo.png' ) %>">
         </div>
   </div>
-<!-- <div style="opacity:0.9;" class="row">
-  <div class="col s1">
+<div class="section">
 
-  </div>
-  <div style="padding-top: 5vh;" class="col s10">
-      <ul class="collapsible" data-collapsible="accordion">
-        <li>
-          <div class="collapsible-header"><%= t('header_26') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
-          <div class="collapsible-body center-align">
-          <img class="responsive-img" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>">
-          <div><a class="invsbtn waves-effect waves-light btn" href="http://sachielwaterinc.com/"><%= t('header_27') %></a></div>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header"><%= t('header_31') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
-          <div class="collapsible-body center-align">
-          <img class="responsive-img" src="<%= asset_path( 'portfolio/aaplus_full.jpg' ) %>">
-          <div><a class="invsbtn waves-effect waves-light btn" href="http://www.aaplusrestaurant.com/"><%= t('header_27') %></a></div>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header"><%= t('header_32') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
-          <div class="collapsible-body center-align">
-          <img class="responsive-img" src="<%= asset_path( 'portfolio/aroma_full.jpg' ) %>">
-          <div><a class="invsbtn waves-effect waves-light btn" href="http://aromacoffee.noctiflow.com/"><%= t('header_27') %></a></div>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header"><%= t('header_28') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
-          <div class="collapsible-body center-align">
-          <img class="responsive-img" src="<%= asset_path( 'portfolio/demo1.jpg' ) %>">
-          <div><a class="invsbtn waves-effect waves-light btn" href="http://demo1.noctiflow.com/"><%= t('header_27') %></a></div>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header"><%= t('header_29') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
-          <div class="collapsible-body center-align">
-          <img class="responsive-img" src="<%= asset_path( 'portfolio/demo2.jpg' ) %>">
-          <div><a class="invsbtn waves-effect waves-light btn" href="http://demo2.noctiflow.com/"><%= t('header_27') %></a></div>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header"><%= t('header_30') %><i class="material-icons right  faa-float animated-hover faa-fast">arrow_drop_down_circle</i></div>
-          <div class="collapsible-body center-align">
-          <img class="responsive-img" src="<%= asset_path( 'portfolio/demo3' ) %>">
-          <div><a class="invsbtn waves-effect waves-light btn" href="http://demo3.noctiflow.com/"><%= t('header_27') %></a></div>
-          </div>
-        </li>
-
-      </ul>
-    </div>
-  </div> -->
-  </div>
 
 <div class="row">
-<div class="col s9 m3 borderround">
-  <div class="card sticky-action">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>">
+
+    <div class="col s12 m4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator responsive-img" src="<%= asset_path( 'portfolio/sachielwater_full.jpg' ) %>">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text"><%= t('header_26') %><i class="material-icons right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title white-text"><%= t('header_26') %><i class="material-icons right">close</i></span>
+          <p><%= t('text_39') %></p>
+          <p><%= t('text_40') %></p>
+          <p><img class="responsive-img" style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/sachielwater_logo.png' ) %>"></p>
+        </div>
+        <div class="card-action center-align">
+          <a class="invsbtn waves-effect waves-light btn" href="http://sachielwaterinc.com/"><%= t('header_35') %></a>
+        </div>
+      </div>
     </div>
-    <div class="card-content">
-      <span class="card-title activator white-text"><%= t('header_26') %><i class="material-icons right">more_vert</i></span>
+    <div class="col s12 m4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator responsive-img" src="<%= asset_path( 'portfolio/aaplus_full.jpg' ) %>">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text"><%= t('header_31') %><i class="material-icons right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title white-text"><%= t('header_31') %><i class="material-icons right">close</i></span>
+          <p><%= t('text_41') %></p>
+          <p><%= t('text_42') %></p>
+          <p><%= t('text_43') %></p>
+          <p><img class="responsive-img" style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/aaplus_logo.png' ) %>"></p>
+        </div>
+        <div class="card-action center-align">
+          <a class="invsbtn waves-effect waves-light btn" href="http://www.aaplusrestaurant.com/"><%= t('header_35') %></a>
+        </div>
+      </div>
     </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><%= t('header_26') %><i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    <div class="col s12 m4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator responsive-img" src="<%= asset_path( 'portfolio/aroma_full.jpg' ) %>">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text"><%= t('header_32') %><i class="material-icons right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title white-text"><%= t('header_32') %><i class="material-icons right">close</i></span>
+          <p><%= t('text_44') %></p>
+          <p><%= t('text_45') %></p>
+          <p><img class="responsive-img" style="max-width: 120px;" src="<%= asset_path( 'portfolio/logos/aromacoffee_logo.png' ) %>"></p>
+        </div>
+        <div class="card-action center-align">
+          <a class="invsbtn waves-effect waves-light btn" href="http://aromacoffee.noctiflow.com/"><%= t('header_35') %></a>
+        </div>
+      </div>
     </div>
-    <div class="card-action center-align">
-      <a class="invsbtn waves-effect waves-light btn" href=""><%= t('header_27') %></a>
+    <div class="col s12 m4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator responsive-img" src="<%= asset_path( 'portfolio/demo1.jpg' ) %>">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text"><%= t('header_28') %><i class="material-icons right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title white-text"><%= t('header_28') %><i class="material-icons right">close</i></span>
+          <p><%= t('text_46') %></p>
+        </div>
+        <div class="card-action center-align">
+          <a class="invsbtn waves-effect waves-light btn" href="http://demo1.noctiflow.com/"><%= t('header_35') %></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator responsive-img" src="<%= asset_path( 'portfolio/demo2.jpg' ) %>">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text"><%= t('header_29') %><i class="material-icons right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title white-text"><%= t('header_29') %><i class="material-icons right">close</i></span>
+          <p><%= t('text_46') %></p>
+        </div>
+        <div class="card-action center-align">
+          <a class="invsbtn waves-effect waves-light btn" href="http://demo2.noctiflow.com/"><%= t('header_35') %></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator responsive-img" src="<%= asset_path( 'portfolio/demo3.jpg' ) %>">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text"><%= t('header_30') %><i class="material-icons right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title white-text"><%= t('header_30') %><i class="material-icons right">close</i></span>
+          <p><%= t('text_46') %></p>
+        </div>
+        <div class="card-action center-align">
+          <a class="invsbtn waves-effect waves-light btn" href="http://demo3.noctiflow.com/"><%= t('header_35') %></a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
 
-    <div id="stars2"></div>
+</div>

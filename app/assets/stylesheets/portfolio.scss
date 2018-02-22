@@ -1,6 +1,6 @@
 @import "mediaquery-mixins";
 html, body {
-  overflow: hidden;
+  // overflow: hidden;
   font-family: "Helvetica" !important;
 }
 
@@ -44,7 +44,7 @@ html, body {
 }
 .portfolio-header{
   font-family:Futura;
-  padding-top: 15vw;
+  padding-top: 10vw;
 }
 .portfolio-x{
   font-family: "Gill Sans";
@@ -54,44 +54,6 @@ html, body {
   }
 }
 
-//  ============= collapsible CSS ============================================
-
-.collapsible-header{
-  display: block !important;
-  background-color: rgba(19, 18, 21, 0.94) !important;
-  border-radius: 2px;
-  box-shadow: -3px 5px 5px #222;
-  border-bottom: none !important;
-  text-transform: uppercase !important;
-}
-
-.collapsible{
-  overflow-y: scroll !important;
-  max-height: 60vh;
-  padding: none;
-  border: none !important;
-}
-
-.collapsible > li {
-  color: white;
-
-}
-
-.row .col {
-  border: none;
-}
-
-.collapsible-body{
-  border-bottom: none !important;
-  box-shadow: -3px 5px 5px #222;
-
-
-  img{
-    opacity: 0.8;
-    max-width: 40vw !important;
-
-  }
-}
 
 // ======== CARD CSS ======================================================
 .card {
@@ -105,10 +67,10 @@ html, body {
 }
 
 .card-reveal{
-  background-color: rgba(255, 255, 255, 0.9) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 
   p{
-  color: black;
+  color: white;
   font-size: 10px;
   }
 
@@ -137,4 +99,8 @@ html, body {
   margin-bottom: 0px;
   min-width: 100%;
   }
+}
+
+.card .card-image img {
+  min-height: 18vw;
 }
