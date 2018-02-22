@@ -7,22 +7,22 @@ html, body {
 
 .invsbtn{
   margin-top: 2%;
-  background-color: rgba(95,95,95, 0.8) !important;
-  font-size: 12px !important;
+  background-color: rgba(0,0,0,0) !important;
+  font-size: 10px !important;
   padding: none !important;
 }
 
 .invsbtn:hover{
-  color: black;
+  color: white;
   text-shadow: 2px 2px 4px white;
 
 }
 
 .btn, .btn-large {
-  border-radius: 999px !important;
+  // border-radius: 999px !important;
 
   &:hover{
-    box-shadow: 3px 5px 5px grey !important;
+    box-shadow: 2px 2px 2px 2px grey !important;
   }
 }
 
@@ -90,5 +90,51 @@ html, body {
     opacity: 0.8;
     max-width: 40vw !important;
 
+  }
+}
+
+// ======== CARD CSS ======================================================
+.card {
+  background-color: rgba(28, 28, 30, 0.94) !important;
+  box-shadow: 3px 5px 5px #313131 !important;
+  opacity: 0.8;
+}
+
+.borderround{
+  border-radius: 999px;
+}
+
+.card-reveal{
+  background-color: rgba(255, 255, 255, 0.9) !important;
+
+  p{
+  color: black;
+  font-size: 10px;
+  }
+
+  .card-title{
+    color: white !important;
+  }
+}
+
+.card-title {
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+}
+
+.card .card-content{
+  padding: 10px !important;
+}
+
+.card .card-action{
+  padding: 0px 0px !important;
+}
+
+
+.card-action {
+  .btn, .btn-large, .btn-flat{
+  margin-top:0px;
+  margin-bottom: 0px;
+  min-width: 100%;
   }
 }
