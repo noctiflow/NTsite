@@ -13,6 +13,7 @@
                 <div style="background-color: rgba(50, 217, 85, 0.94);"><%= flash[:notice] %></div>
                 <div style="background-color: rgba(217, 46, 47, 0.94);"><%= flash[:error] %></div>
               </div>
+              
               <br>
               <% if I18n.locale == I18n.default_locale %>
               <center><%= f.button :submit, t('send_btn'), :class=> "btn btn-primary btnmsg faa-pulse animated-hover faa-slow" %></center>
