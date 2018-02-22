@@ -1,6 +1,6 @@
 //keep all global styling in this file
 *{
-  font-family:"Helvetica";
+  font-family:"helvlightregular",Arial,sans-serif;
 }
 .carousel{
   height: 30vw !important;
@@ -11,10 +11,14 @@
     height:50vw !important;
   }
 }
+.col-md-4, .col-lg-4{
+  @include desktop{  width:33.25%;  }
+  @include desktopxl{width:33.25%;  }
+}
 p{
   letter-spacing: 1.5px !important;
   font-weight: 100;
-  font-family:"Helvetica Neue";
+  font-family:"helvlightregular",Arial,sans-serif;;
   margin-top:3%;
   color:white;
   text-align: center;
@@ -33,7 +37,7 @@ p{
 }
 .filtermenu > li{
   font-weight: 200;
-  font-family:"Helvetica Neue";
+  font-family:"helvlightregular",Arial,sans-serif;
   font-size: 20px;
   letter-spacing:2px !important;
   @include tablet{
@@ -379,6 +383,7 @@ body{
   right:0;
   width:7vw;
   height:100%;
+  z-index: 2;
   @include desktop{
     width:8vw;
   }
@@ -395,6 +400,7 @@ body{
   left:0;
   width:7vw;
   height:100%;
+  z-index:2;
   @include desktop{
     width:8vw;
   }
@@ -479,6 +485,8 @@ body{
   top:0;
   margin-left:9.5%;
   margin-top:-0.5%;
+  filter: drop-shadow( 5px 5px 5px #222 );
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
   @include mobile{
     margin-left:0;
     width:36vw;
@@ -504,6 +512,8 @@ body{
   top: 0;
   margin-right: 9.5%;
   margin-top:-0.5%;
+  filter: drop-shadow( -5px 5px 5px #222 );
+  -webkit-filter: drop-shadow(-5px 5px 5px #222);
   @include mobile{
     margin-right:0;
     width: 36vw;
@@ -554,6 +564,12 @@ body{
 }
 .splashcontainer{
   position: relative;
+}
+.splashtext{
+  height:30px;
+  line-height: 30px;
+  padding:10px 0px 10px 0px;
+  text-align: center;
 }
 .cutCorner {
   position:relative; background-color:#222;
@@ -668,6 +684,12 @@ body{
 
 .navbar .navbar-collapse {
   text-align: center;
+  @media (max-width: 767px){
+    padding-right: 40vw;
+  }
+  @media (min-width: 768px){
+    padding-right: 10px;
+  }
 }
 
 .navbar-nav > li  {
