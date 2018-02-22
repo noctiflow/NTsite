@@ -1,7 +1,6 @@
 
-      <div class="container-fluid" style="padding:30px;">
+      <div class="container-fluid" style="padding:10px 50px 0px 50px;">
         <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-            <br>
             <%= f.input :name, :required => true, :label => t('text_37') %>
             <%= f.input :email, :required => true %>
             <%= f.input :message, :as => :text,  :label => t('text_38'), :required => true , :input_html => { :cols => 100, :rows => 10} %>
@@ -9,17 +8,17 @@
               <%= f.input :nickname, :hint => 'Leave this field blank!' %>
             </div>
             <div>
-              <div class="splashtext">
+              <div class="splashtext" style="margin-top: -10px;">
                 <div style="background-color: rgba(50, 217, 85, 0.94);"><%= flash[:notice] %></div>
                 <div style="background-color: rgba(217, 46, 47, 0.94);"><%= flash[:error] %></div>
               </div>
-              
               <br>
               <% if I18n.locale == I18n.default_locale %>
               <center><%= f.button :submit, t('send_btn'), :class=> "btn btn-primary btnmsg faa-pulse animated-hover faa-slow" %></center>
               <% else %>
               <center><%= f.button :submit, t('send_btn'), :class=> "btn btn-primary btnmsg faa-pulse animated-hover faa-slow", :locale => 'zh_TW' %></center>
               <% end %>
+              <br>
             </div>
         <% end %>
       </div>
