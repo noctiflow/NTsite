@@ -1,6 +1,7 @@
 
       <div class="container-fluid" style="padding:30px;">
         <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+            <br>
             <%= f.input :name, :required => true, :label => t('text_37') %>
             <%= f.input :email, :required => true %>
             <%= f.input :message, :as => :text,  :label => t('text_38'), :required => true , :input_html => { :cols => 100, :rows => 10} %>
@@ -8,8 +9,10 @@
               <%= f.input :nickname, :hint => 'Leave this field blank!' %>
             </div>
             <div>
-              </br>
-              <p id="emailHelp" class="form-text mast__text js-spanize" style="color:#aaa;font-style:italic;font-size:1em;text-shadow: 1px 1px 4px #000; text-align: center">
+              <div class="splashtext">
+                <div style="background-color: rgba(50, 217, 85, 0.94);"><%= flash[:notice] %></div>
+                <div style="background-color: rgba(217, 46, 47, 0.94);"><%= flash[:error] %></div>
+              </div>
               <br>
               <% if I18n.locale == I18n.default_locale %>
               <center><%= f.button :submit, t('send_btn'), :class=> "btn btn-primary btnmsg faa-pulse animated-hover faa-slow" %></center>
