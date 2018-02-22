@@ -25,9 +25,14 @@
     // border-radius: 9999px;
 }
 .btn-primary {
-    box-shadow:0 0 0 1px #428bca inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
-    background-color:#428bca;
+    box-shadow:0 0 0 1px #beb988 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #8e8b66, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#beb988;
+    border-color: #777455;
     // border-radius: 9999px;
+  &:hover{
+    background-color: #777455 !important;
+    border-color: #777455 !important;
+  }
 }
  .btn-success {
     box-shadow:0 0 0 1px #5cb85c inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4cae4c, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
