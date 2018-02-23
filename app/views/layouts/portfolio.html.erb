@@ -8,10 +8,13 @@
     <%= javascript_include_tag 'application' %>
     <%= stylesheet_link_tag "portfolio" %>
     <%= favicon_link_tag 'nf.ico', type: 'image/png' %>
+    <% if I18n.locale == I18n.default_locale %>
     <meta name="keywords" lang="en" content="HTML, CSS, Ruby, Rails, Javascript, WordPress, Web Development, Web Design, Web Application, Vancouver, Richmond, Burnaby, Coding">
-    <meta name="keywords" lang="zh" content="HTML, CSS, Ruby, Rails, Javascript, WordPress, 网页开发, 网页设计,網頁應用程式, 溫哥華, 列治文, 本拿比, 编码">
     <meta name="description" lang="en" content="Noctiflow Technologies is a web development & design company based in Vancouver, BC. We are focused on modernized, sleek design with ease of accessibility and functionality in mind. Get in touch with us today to get a free quote on your concept.">
+    <% else %>
+    <meta name="keywords" lang="zh" content="HTML, CSS, Ruby, Rails, Javascript, WordPress, 网页开发, 网页设计,網頁應用程式, 溫哥華, 列治文, 本拿比, 编码">
     <meta name="description" lang="zh" content="Noctiflow Technologies 是一间网页开发与网页设计的公司，位于温哥华，卑诗省。 我们专注与现代时尚的设计以及简易多功能的理念。 联系我们即可免费估价。">
+    <%end%>
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
