@@ -1,7 +1,7 @@
 .contactform {
   background-color:#33332E;
   box-shadow: 10px 16px 16px rgb(128,128,128);
-  width:40vw;
+  width:30vw;
   overflow: scroll;
   margin-top: 60px;
   margin-bottom: 40px;
@@ -26,4 +26,10 @@ p{
 
 textarea {
   resize: none;
+}
+
+.form-control {
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border-radius: 35px;
 }
