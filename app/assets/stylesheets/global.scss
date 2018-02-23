@@ -1,6 +1,13 @@
 //keep all global styling in this file
 *{
   font-family:"helvlightregular",Arial,sans-serif;
+  cursor: default;
+}
+input{
+  cursor: text;
+}
+a, a > img, a > i, .activator > i{
+  cursor: pointer;
 }
 .btn {
   text-shadow: 1px 1px 1px #000;
