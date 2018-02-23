@@ -21,6 +21,12 @@ a, a > img, a > i, .activator > i{
     height:50vw !important;
   }
 }
+.carousel-control:focus {
+  opacity: 0.6;
+}
+.carousel-control:hover {
+  opacity: 0.9;
+}
 .col-md-4, .col-lg-4{
   @include desktop{  width:33.25%;  }
   @include desktopxl{width:33.25%;  }
