@@ -1,55 +1,175 @@
+//
+// // =================== 3D BUTTONs =================================================
+//
+//
+//
+// .btn3d {
+//     transition:all .08s linear;
+//     position:relative;
+//     outline:medium none;
+//     -moz-outline-style:none;
+//     border:0px;
+//     margin-right:10px;
+//     margin-top:15px;
+// }
+// .btn3d:focus {
+//     outline:medium none;
+//     -moz-outline-style:none;
+// }
+// .btn3d:active {
+//     top:9px;
+// }
+// .btn-default {
+//     box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #adadad, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+//     background-color:#fff;
+//     // border-radius: 9999px;
+// }
+// .btn-primary {
+//     box-shadow:0 0 0 1px #85815f inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #8e8b66, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+//     background-color:#aba67a;
+//     border-color: #aba67a;
+//     // border-radius: 9999px;
+//   &:hover{
+//     background-color: #726f51 !important;
+//     border-color: #726f51 !important;
+//   }
+// }
+//  .btn-success {
+//     box-shadow:0 0 0 1px #5cb85c inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4cae4c, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+//     background-color:#5cb85c;
+// }
+//  .btn-info {
+//     box-shadow:0 0 0 1px #5bc0de inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #46b8da, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+//     background-color:#5bc0de;
+// }
+// .btn-warning {
+//     box-shadow:0 0 0 1px #f0ad4e inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #eea236, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+//     background-color:#f0ad4e;
+// }
+// .btn-danger {
+//     box-shadow:0 0 0 1px #c63702 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #C24032, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+//     background-color:#c63702;
+// }
+// .btn-label {position: relative;left: -15px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
+// .btn-labeled {padding-top: 0;padding-bottom: 0;}
+// .btn { margin-bottom:10px; }
 
-// =================== 3D BUTTONs =================================================
+
+/***********************
+  RAISED BUTTONS
+************************/
+.btn-primary.raised {
+	box-shadow: 0 3px 0 0 #007299;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+	background: #33a6cc;
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
 
 
+/**************************
+  DEFAULT BOOTSTRAP STYLES
+**************************/
 
-.btn3d {
-    transition:all .08s linear;
-    position:relative;
-    outline:medium none;
-    -moz-outline-style:none;
-    border:0px;
-    margin-right:10px;
-    margin-top:15px;
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 10px 16px;
 }
-.btn3d:focus {
-    outline:medium none;
-    -moz-outline-style:none;
+
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
 }
-.btn3d:active {
-    top:9px;
-}
-.btn-default {
-    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #adadad, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
-    background-color:#fff;
-    // border-radius: 9999px;
-}
+
 .btn-primary {
-    box-shadow:0 0 0 1px #85815f inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #8e8b66, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
-    background-color:#aba67a;
-    border-color: #aba67a;
-    // border-radius: 9999px;
-  &:hover{
-    background-color: #726f51 !important;
-    border-color: #726f51 !important;
-  }
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
 }
- .btn-success {
-    box-shadow:0 0 0 1px #5cb85c inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4cae4c, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
-    background-color:#5cb85c;
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3276b1;
+  border-color: #285e8e;
 }
- .btn-info {
-    box-shadow:0 0 0 1px #5bc0de inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #46b8da, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
-    background-color:#5bc0de;
+
+/***********************
+  GRADIENT BUTTONS
+************************/
+.btn-primary.gradient {
+	background: -moz-linear-gradient(top,  #33a6cc 0%, #0099cc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#33a6cc), color-stop(100%,#0099cc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #33a6cc 0%,#0099cc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #33a6cc 0%,#0099cc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #33a6cc 0%,#0099cc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #33a6cc 0%,#0099cc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33a6cc', endColorstr='#0099cc',GradientType=0 ); /* IE6-9 */
 }
-.btn-warning {
-    box-shadow:0 0 0 1px #f0ad4e inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #eea236, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
-    background-color:#f0ad4e;
+.btn-primary.gradient:hover, .btn-primary.gradient:focus, .btn-primary.gradient:active, .btn-primary.gradient.active, .open > .dropdown-toggle.btn-primary {
+	background: -moz-linear-gradient(top,  #66b2cc 0%, #33a6cc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#66b2cc), color-stop(100%,#33a6cc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #66b2cc 0%,#33a6cc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #66b2cc 0%,#33a6cc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #66b2cc 0%,#33a6cc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #66b2cc 0%,#33a6cc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66b2cc', endColorstr='#33a6cc',GradientType=0 ); /* IE6-9 */
 }
-.btn-danger {
-    box-shadow:0 0 0 1px #c63702 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #C24032, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
-    background-color:#c63702;
+.btn-primary.gradient:active, .btn-primary.gradient.active {
+	background: -moz-linear-gradient(top,  #267c99 0%, #007299 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#267c99), color-stop(100%,#007299)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #267c99 0%,#007299 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #267c99 0%,#007299 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #267c99 0%,#007299 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #267c99 0%,#007299 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#267c99', endColorstr='#007299',GradientType=0 ); /* IE6-9 */
 }
-.btn-label {position: relative;left: -15px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
-.btn-labeled {padding-top: 0;padding-bottom: 0;}
-.btn { margin-bottom:10px; }
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+	padding: 14px 24px;
+	border: 0 none;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+	outline: 0 none;
+}
+
+.btn-primary {
+	background: #78ceff;
+	color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+	background: #33a6cc;
+}
+.btn-primary:active, .btn-primary.active {
+	background: #007299;
+	box-shadow: none;
+}

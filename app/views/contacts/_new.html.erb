@@ -1,9 +1,9 @@
 
       <div class="container-fluid" style="padding:10px 50px 0px 50px;">
         <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-            <%= f.input :name, :required => true, :label => t('text_37') %>
-            <%= f.input :email, :required => true %>
-            <%= f.input :message, :as => :text,  :label => t('text_38'), :required => true , :input_html => { :cols => 100, :rows => 10} %>
+            <%= f.input :name, :required => true, :label => t('text_37') , :placeholder => t('text_47')%>
+            <%= f.input :email, :required => true, :placeholder => t('text_48')%>
+            <%= f.input :message, :as => :text,  :label => t('text_38'), :required => true , :input_html => { :cols => 50, :rows => 8}, :placeholder => t('text_49') %>
             <div class= "hidden">
               <%= f.input :nickname, :hint => 'Leave this field blank!' %>
             </div>
@@ -12,14 +12,17 @@
                 <div style="background-color: rgba(50, 217, 85, 0.94);"><%= flash[:notice] %></div>
                 <div style="background-color: rgba(217, 46, 47, 0.94);"><%= flash[:error] %></div>
               </div>
-              <br>
+              <center>
               <% if I18n.locale == I18n.default_locale %>
-              <center><%= f.button :submit, t('send_btn'), :class=> "btn btn-primary btnmsg faa-pulse animated-hover faa-slow" %></center>
+              <%= f.button :submit, t('send_btn'), :class=> "btn btn-primary btnmsg faa-pulse animated-hover faa-slow gradient raised" %>
               <% else %>
-              <center><%= f.button :submit, t('send_btn'), :class=> "btn btn-primary btnmsg faa-pulse animated-hover faa-slow", :locale => 'zh_TW' %></center>
+
+              <%= f.button :submit, t('send_btn'), :class=> "btn btn-primary btnmsg faa-pulse animated-hover faa-slow gradient raised ", :locale => 'zh_TW' %>
               <% end %>
+              </center>
               <br>
+              <br>
+
             </div>
         <% end %>
       </div>
-      
