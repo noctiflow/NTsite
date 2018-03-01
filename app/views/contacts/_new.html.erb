@@ -1,9 +1,9 @@
 
-      <div class="container-fluid" style="padding:10px 50px 0px 50px;">
+      <div class="container-fluid" id="contact-container">
         <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-            <%= f.input :name, :required => true, :label => t('text_37') , :placeholder => t('text_47')%>
-            <%= f.input :email, :required => true, :placeholder => t('text_48')%>
-            <%= f.input :message, :as => :text,  :label => t('text_38'), :required => true , :input_html => { :cols => 50, :rows => 8}, :placeholder => t('text_49') %>
+            <%= f.input :name, :required => true, :label => false, :placeholder => t('text_37')%>
+            <%= f.input :email, :required => true, :label => false, :placeholder => t('text_47')%>
+            <%= f.input :message, :as => :text, :required => true , :label => false, :input_html => { :cols => 50, :rows => 8}, :placeholder => t('text_38') %>
             <div class= "hidden">
               <%= f.input :nickname, :hint => 'Leave this field blank!' %>
             </div>
@@ -22,7 +22,8 @@
               </center>
               <br>
               <br>
-
+              <div style="text-align: center;letter-spacing: 1.2px;margin:0px 20px 0px 20px;">Or, feel free to email us anytime at contact@noctiflow.com</div>
+              <br>
             </div>
         <% end %>
       </div>

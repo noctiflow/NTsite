@@ -102,8 +102,8 @@ en:
   text_34: "Contact us if you have any questions regarding the services we provide"
   text_35: "Thank you for your message. We will contact you soon!"
   text_36: "Cannot send message."
-  text_37: "Name"
-  text_38: "Message"
+  text_37: "Name *"
+  text_38: "Message *"
   text_39: "Canada Natural Spring Water, Proudly Served Locally and Globally."
   text_40: "January 2018"
   text_41: "Fish Noodle Soup Restaurant"
@@ -112,9 +112,7 @@ en:
   text_44: "Best Coffee In The Neighbourhood"
   text_45: "October 2017"
   text_46: "WordPress Based Demo Site"
-  text_47: "Please Enter Your Name Here..."
-  text_48: "Please Enter Your Email Here..."
-  text_49: "What Can We Do For You?..."
+  text_47: "Email *"
 
 
   send_btn: "Send Message"
