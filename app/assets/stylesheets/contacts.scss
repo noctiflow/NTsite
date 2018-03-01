@@ -31,5 +31,11 @@ textarea {
 .form-control {
   background-color: rgba(0,0,0,0.6);
   color: white;
-  border-radius: 35px;
+  border-radius: 20px;
+}
+#contact-container{
+  padding:10px 50px 0px 50px;
+  @include mobile{
+    padding:10px 20px 0px 20px;
+  }
 }
