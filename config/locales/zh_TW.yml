@@ -111,9 +111,8 @@ zh_TW:
   text_44: "社區裡最好的咖啡店"
   text_45: "十月 2017"
   text_46: "WordPress 樣本網站"
-  text_47: "請輸入您的名字..."
-  text_48: "請輸入您的Email..."
-  text_49: "我們能為您做什麼?..."
+  text_47: "Email *"
+  text_48: "或者，請隨時Email我們 contact@noctiflow.com，謝謝。"
 
 
   send_btn: "發送訊息"
